@@ -506,9 +506,9 @@ button[type="submit"] {
 
 .ico-register {
     padding: 0px 30px !important;
-    height:30px;
-    line-height:28px !important;
-    border-radius:30px !important;
+    height: 30px;
+    line-height: 28px !important;
+    border-radius: 30px !important;
 }
 
 .ico-cart {
@@ -692,6 +692,7 @@ h5 {
 .img-rounded {
     border-radius: 12px;
 }
+
 .img-rounded__top {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -716,7 +717,7 @@ h5 {
     position: relative;
 }
 
-.hero-image img {
+    .hero-image img {
         width: 100%;
     }
 
@@ -736,19 +737,19 @@ h5 {
     width: 68%;
 }
 
-.hero-text h1 {
-    color: #fff;
-    padding-bottom: 30px;
-    line-height: 137%;
-    font-size: 38px;
-}
+    .hero-text h1 {
+        color: #fff;
+        padding-bottom: 30px;
+        line-height: 137%;
+        font-size: 38px;
+    }
 
-.hero-text .button-3 {
-    color: #66b22e;
-    background: #fff;
-    font-size: 16px;
-    padding-top: 2px;
-}
+    .hero-text .button-3 {
+        color: #66b22e;
+        background: #fff;
+        font-size: 16px;
+        padding-top: 2px;
+    }
 
 /* --- End of Home page Slider --- */
 
@@ -802,17 +803,17 @@ h5 {
     margin: 0 40px 0px;
 }
 
-.item-box:hover {
-    color: #666;
-}
+    .item-box:hover {
+        color: #666;
+    }
 
-.item-box:nth-child(3n+1) {
-    margin: 0px;
-}
+    .item-box:nth-child(3n+1) {
+        margin: 0px;
+    }
 
-.item-box:nth-child(3n+3) {
-    margin: 0;
-}
+    .item-box:nth-child(3n+3) {
+        margin: 0;
+    }
 
 .product-grid .item-box .picture {
     margin-bottom: 0;
@@ -826,9 +827,9 @@ h5 {
     line-height: 0;
 }
 
-.item-box .picture a:before {
-    display: none;
-}
+    .item-box .picture a:before {
+        display: none;
+    }
 
 .product-item .picture img {
     position: unset;
@@ -864,9 +865,9 @@ h2.product-title {
     display: block !important;
 }
 
-.description:hover {
-    color: #666;
-}
+    .description:hover {
+        color: #666;
+    }
 /* --- End of Product Box --- */
 
 /* --- Start of Customers Say --- */
@@ -874,7 +875,7 @@ h2.product-title {
     background: #FAFAFA;
 }
 
-.section-customersay .container.flex-box {
+    .section-customersay .container.flex-box {
         justify-content: space-between;
     }
 
@@ -889,7 +890,7 @@ h2.product-title {
     padding-left: 42px;
 }
 
-.customer-review .review-body {
+    .customer-review .review-body {
         width: 100%;
         font-size: 18px;
         padding-top: 25px;
@@ -910,14 +911,14 @@ h2.product-title {
     color: #66B22E !important
 }
 
-.request-contact .phone {
-    color: #68B330;
-    margin-left: 0px;
-}
+    .request-contact .phone {
+        color: #68B330;
+        margin-left: 0px;
+    }
 
-.request-contact .phone:before {
-    background: url(../img/ico-phone.png) no-repeat left center;
-}
+        .request-contact .phone:before {
+            background: url(../img/ico-phone.png) no-repeat left center;
+        }
 /* --- End of Customers Say --- */
 
 /* --- Start of section youneed --- */
@@ -932,7 +933,7 @@ h2.product-title {
     text-align: left;
 }
 
-.request-callback-left .description {
+    .request-callback-left .description {
         padding: 0px;
         padding-bottom: 20px;
     }
@@ -945,7 +946,7 @@ h2.product-title {
     margin-right: auto;
 }
 
-.request-callback-form h3 {
+    .request-callback-form h3 {
         justify-content: center;
         display: flex;
         padding-bottom: 22px;
@@ -955,7 +956,7 @@ h2.product-title {
     min-width: 199px;
     height: 30px;
     padding: 0px;
-    width:auto;
+    width: auto;
 }
 /* --- End of section youneed --- */
 
@@ -965,7 +966,7 @@ h2.product-title {
     position: relative;
 }
 
-.section-newsletter .subtitle {
+    .section-newsletter .subtitle {
         color: #fff;
         text-align: right;
         margin: 0px;
@@ -992,18 +993,17 @@ h2.product-title {
     padding: 30px 20px 30px 0px;
     padding-left: 100px;
     margin-left: auto;
-
 }
 
-.newsletter .title {
-    display: flex;
-}
+    .newsletter .title {
+        display: flex;
+    }
 
-.newsletter .title strong {
-    color: #66B22E;
-    font-size: 18px !important;
-    z-index: 9999;
-}
+        .newsletter .title strong {
+            color: #66B22E;
+            font-size: 18px !important;
+            z-index: 9999;
+        }
 
 .newsletter-email {
     position: relative;
@@ -1239,9 +1239,9 @@ img.footer-logo {
     letter-spacing: 0px !important;
 }
 
-.button-2:hover {
-    background: #74C23A !important;
-}
+    .button-2:hover {
+        background: #74C23A !important;
+    }
 
 
 .product-grid .item-box .buttons input[type="button"] {
@@ -2210,10 +2210,11 @@ ul.flags a.selected img, ul.flags a:hover img {
 /*Progress*/
 .progress {
     background: rgba(118, 188, 60, 0.05);
-    display:flex;
-    width:100%;
-    height:20px;
+    display: flex;
+    width: 100%;
+    height: 20px;
 }
+
 .progress-bar {
     background: #76BC3C;
     height: 100%;
@@ -2222,13 +2223,14 @@ ul.flags a.selected img, ul.flags a:hover img {
     align-items: center;
     justify-content: flex-end;
     color: #fff;
-    font-size:12px;
-    padding-right:11px;
+    font-size: 12px;
+    padding-right: 11px;
 }
 
 .flex-unset {
     flex: unset !important;
 }
+
 .mw-1250 {
     max-width: 1250px;
     margin: auto;
@@ -2284,7 +2286,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index:999999;
+    z-index: 999999;
 }
 
     .tooltip:before {
@@ -2302,10 +2304,12 @@ ul.flags a.selected img, ul.flags a:hover img {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     max-width: 238px;
 }
-.card-text{
-    width:auto;
-    position:relative;
+
+.card-text {
+    width: auto;
+    position: relative;
 }
+
 .text-card {
     display: flex;
     padding: 70px 0px;
@@ -2375,37 +2379,39 @@ ul.flags a.selected img, ul.flags a:hover img {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    padding-top:42px;
+    padding-top: 42px;
     color: rgba(60, 60, 59, 0.1);
 }
-.change-shape:before {
-    display: flex;
-    content:"";
-    width:12px;
-    height:7px;
-    
-    background:url("../img/arrow-up.png") no-repeat;
-}
+
+    .change-shape:before {
+        display: flex;
+        content: "";
+        width: 12px;
+        height: 7px;
+        background: url("../img/arrow-up.png") no-repeat;
+    }
 
 .step-active {
-    display:block;
+    display: block;
 }
+
 .stepbgcolor {
- background: #fafafa;
+    background: #fafafa;
 }
 
 /*Step 1*/
 #step1 {
-    
 }
-#step1 h3.card-text {
-    width: auto;
-    position: relative;
-}
-#step1 .tooltip {
-    top: 21px;
-    right: -22px;
-}
+
+    #step1 h3.card-text {
+        width: auto;
+        position: relative;
+    }
+
+    #step1 .tooltip {
+        top: 21px;
+        right: -22px;
+    }
 
 
 /*Step 2*/
@@ -2445,8 +2451,9 @@ ul.flags a.selected img, ul.flags a:hover img {
     padding: 0 22px;
     width: 100%;
 }
+
 #step2 .button-2 {
-    margin-top:18px;
+    margin-top: 18px;
 }
 
 .card .form-group {
@@ -2464,7 +2471,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /*Step 2b*/
 .step2b {
-    background: #fafafa;   
+    background: #fafafa;
 }
 
 
@@ -2526,14 +2533,16 @@ ul.flags a.selected img, ul.flags a:hover img {
     max-width: 690px;
     margin: auto;
 }
-#step3 h3{
-    position:relative;
-    width:auto;
-}
-#step3 .tooltip {
-    top: 21px;
-    right: -22px;
-}
+
+    #step3 h3 {
+        position: relative;
+        width: auto;
+    }
+
+    #step3 .tooltip {
+        top: 21px;
+        right: -22px;
+    }
 
 /*Step 4*/
 #step4 {
@@ -2556,8 +2565,7 @@ ul.flags a.selected img, ul.flags a:hover img {
         margin: 0 21px 42px;
         width: 232px;
         height: 60px;
-        position:relative;
-
+        position: relative;
     }
 
     .checkbox-wrapper label {
@@ -2620,15 +2628,16 @@ ul.flags a.selected img, ul.flags a:hover img {
     max-width: 690px;
     margin: auto;
 }
-#step6 h3 {
-    position: relative;
-    width: auto;
-}
 
-#step6 .tooltip {
-    top: 21px;
-    right: -22px;
-}
+    #step6 h3 {
+        position: relative;
+        width: auto;
+    }
+
+    #step6 .tooltip {
+        top: 21px;
+        right: -22px;
+    }
 
 /*Step 8*/
 #step8 {
@@ -2636,35 +2645,40 @@ ul.flags a.selected img, ul.flags a:hover img {
     margin: auto;
     background: #fafafa;
 }
+
 .radio-buttons-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 56px;
 }
-.radio-buttons-wrapper .radio-btn {
-    width: 80px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 21px;
-}
-.radio-buttons-wrapper label {
-    font-size: 18px;
-    color: #000;
-    font-weight: bold;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background: #fff;
-}
+
+    .radio-buttons-wrapper .radio-btn {
+        width: 80px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 21px;
+    }
+
+    .radio-buttons-wrapper label {
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: #fff;
+    }
+
 .radio-btn input[type=radio] {
     display: none;
 }
+
 .radio-buttons-wrapper [type="radio"]:checked + label {
     background: #66b22e;
     color: #fff;
@@ -2840,13 +2854,13 @@ ul.flags a.selected img, ul.flags a:hover img {
     background: #fafafa;
 }
 
-#step11b .card {
-    width: 239px;
-    flex: unset;
-    background: #FAFAFA;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-    /*box-shadow: 0px 0px 15px #e4e2dc;*/
-}
+    #step11b .card {
+        width: 239px;
+        flex: unset;
+        background: #FAFAFA;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        /*box-shadow: 0px 0px 15px #e4e2dc;*/
+    }
 
 .card .price {
     font-size: 15px;
@@ -4217,7 +4231,7 @@ button.checkout-button {
             padding: 0px 73px;
             margin: auto;
         }
-    /*Home Page*/   
+    /*Home Page*/
 
     /*Footer*/
     .footer .container {
