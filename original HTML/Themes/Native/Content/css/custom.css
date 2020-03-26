@@ -972,6 +972,7 @@ h2.product-title {
         display: flex;
         align-items: center;
         font-size: 22px;
+        padding-left: 20px;
     }
 
 .section-newsletter-fixed {
@@ -988,9 +989,10 @@ h2.product-title {
 }
 
 .newsletter {
-    padding: 30px 0;
+    padding: 30px 20px 30px 0px;
     padding-left: 100px;
     margin-left: auto;
+
 }
 
 .newsletter .title {
@@ -1033,7 +1035,7 @@ input#newsletter-subscribe-button {
 }
 /* --- End of newsletter --- */
 
-/*Footer*/
+/* --- Start of footer --- */
 .footer {
     color: #3c3c3b;
     font-weight: 400;
