@@ -898,8 +898,9 @@ h2.product-title {
 }
 
     .request-contact .phone {
-        color: #68B330;
+        color: #66B22E;
         margin-left: 0px;
+        font-size: 900px;
     }
 
         .request-contact .phone:before {
