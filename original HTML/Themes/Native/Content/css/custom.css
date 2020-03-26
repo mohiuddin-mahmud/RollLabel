@@ -1,4 +1,5 @@
-﻿/*********** Colours *******************************/
+﻿
+/*********** Colours *******************************/
 
 /* Green (#68B330) bg to orange */
 .ico-inbox .inbox-unread,
@@ -687,6 +688,14 @@ h4 {
 h5 {
     font-size: 13px;
 }
+
+.img-rounded {
+    border-radius: 12px;
+}
+.img-rounded__top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
 /*Button*/
 .button-3 {
     padding: 0px 36px;
@@ -697,16 +706,17 @@ h5 {
     border-radius: 30px;
     border: 0px;
 }
-/*HOME PAGE*/
+/* ======================== HOME PAAGE ========================  */
 .home-page-body .page {
     margin: 0px;
 }
 
+/* --- Start of Home page Slider --- */
 .hero-image {
     position: relative;
 }
 
-    .hero-image img {
+.hero-image img {
         width: 100%;
     }
 
@@ -726,28 +736,30 @@ h5 {
     width: 68%;
 }
 
-    .hero-text h1 {
-        color: #fff;
-        padding-bottom: 30px;
-        /*line-height: 50px;*/
-        line-height: 137%;
-        font-size: 38px;
-    }
+.hero-text h1 {
+    color: #fff;
+    padding-bottom: 30px;
+    line-height: 137%;
+    font-size: 38px;
+}
 
-    .hero-text .button-3 {
-        color: #66b22e;
-        background: #fff;
-        font-size: 16px;
-        padding-top: 2px;
-    }
+.hero-text .button-3 {
+    color: #66b22e;
+    background: #fff;
+    font-size: 16px;
+    padding-top: 2px;
+}
 
+/* --- End of Home page Slider --- */
+
+/* --- Start of Content block for 'Create your own custom roll labels' --- */
 .home-page .text-container {
     margin: 0 auto 0px;
     background: url(../img/topic-bg.png) no-repeat center;
     background-size: 100%;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 .text-container-title {
@@ -755,15 +767,15 @@ h5 {
     margin-top: 30px;
 }
 
-    .text-container-title h2 {
-        font-family: 'Lato', Arial, sans-serif, "Helvetica Neue";
-        text-transform: unset;
-        background: transparent;
-    }
+/*.text-container-title h2 {
+    font-family: 'Lato', Arial, sans-serif, "Helvetica Neue";
+    text-transform: unset;
+    background: transparent;
+}
 
-    .text-container-title:after {
-        display: none;
-    }
+.text-container-title:after {
+    display: none;
+}*/
 
 .text-container-body {
     max-width: 434px;
@@ -776,8 +788,9 @@ h5 {
     background: url(../images/topic-bg.png) no-repeat center;
     background-size: 80%;
 }
+/* --- End of Content block for 'Create your own custom roll labels' --- */
 
-/*Product Box*/
+/* --- Start of Product Box --- */
 .item-grid {
     justify-content: space-between;
 }
@@ -789,17 +802,17 @@ h5 {
     margin: 0 40px 0px;
 }
 
-    .item-box:hover {
-        color: #666;
-    }
+.item-box:hover {
+    color: #666;
+}
 
-    .item-box:nth-child(3n+1) {
-        margin: 0px;
-    }
+.item-box:nth-child(3n+1) {
+    margin: 0px;
+}
 
-    .item-box:nth-child(3n+3) {
-        margin: 0;
-    }
+.item-box:nth-child(3n+3) {
+    margin: 0;
+}
 
 .product-grid .item-box .picture {
     margin-bottom: 0;
@@ -813,9 +826,9 @@ h5 {
     line-height: 0;
 }
 
-    .item-box .picture a:before {
-        display: none;
-    }
+.item-box .picture a:before {
+    display: none;
+}
 
 .product-item .picture img {
     position: unset;
@@ -851,21 +864,21 @@ h2.product-title {
     display: block !important;
 }
 
-    .description:hover {
-        color: #666;
-    }
+.description:hover {
+    color: #666;
+}
+/* --- End of Product Box --- */
 
-/*Customers Say*/
+/* --- Start of Customers Say --- */
 .section-customersay {
     background: #FAFAFA;
 }
 
-    .section-customersay .container.flex-box {
+.section-customersay .container.flex-box {
         justify-content: space-between;
     }
 
 .customersay-picture {
-    border-radius: 15px;
     display: flex;
     width: 50%;
 }
@@ -876,7 +889,7 @@ h2.product-title {
     padding-left: 42px;
 }
 
-    .customer-review .review-body {
+.customer-review .review-body {
         width: 100%;
         font-size: 18px;
         padding-top: 25px;
@@ -897,16 +910,18 @@ h2.product-title {
     color: #66B22E !important
 }
 
-    .request-contact .phone {
-        color: #66B22E;
-        margin-left: 0px;
-        font-size: 900px;
-    }
+.request-contact .phone {
+    color: #68B330;
+    margin-left: 0px;
+}
 
-        .request-contact .phone:before {
-            background: url(../img/ico-phone.png) no-repeat left center;
-        }
-/*section youneed*/
+.request-contact .phone:before {
+    background: url(../img/ico-phone.png) no-repeat left center;
+}
+/* --- End of Customers Say --- */
+
+/* --- Start of section youneed --- */
+
 .request-callback {
     padding: 70px 30px !important;
     justify-content: space-between;
@@ -917,7 +932,7 @@ h2.product-title {
     text-align: left;
 }
 
-    .request-callback-left .description {
+.request-callback-left .description {
         padding: 0px;
         padding-bottom: 20px;
     }
@@ -930,7 +945,7 @@ h2.product-title {
     margin-right: auto;
 }
 
-    .request-callback-form h3 {
+.request-callback-form h3 {
         justify-content: center;
         display: flex;
         padding-bottom: 22px;
@@ -942,20 +957,22 @@ h2.product-title {
     padding: 0px;
     width:auto;
 }
+/* --- End of section youneed --- */
 
-/*newsletter*/
+/* --- Start of newsletter --- */
 .section-newsletter {
     background: #65B22E;
     position: relative;
 }
 
-    .section-newsletter .subtitle {
+.section-newsletter .subtitle {
         color: #fff;
         text-align: right;
         margin: 0px;
         display: flex;
         align-items: center;
         font-size: 22px;
+        padding-left: 20px;
     }
 
 .section-newsletter-fixed {
@@ -972,20 +989,21 @@ h2.product-title {
 }
 
 .newsletter {
-    padding: 30px 0;
+    padding: 30px 20px 30px 0px;
     padding-left: 100px;
     margin-left: auto;
+
 }
 
-    .newsletter .title {
-        display: flex;
-    }
+.newsletter .title {
+    display: flex;
+}
 
-        .newsletter .title strong {
-            color: #66B22E;
-            font-size: 18px !important;
-            z-index: 9999;
-        }
+.newsletter .title strong {
+    color: #66B22E;
+    font-size: 18px !important;
+    z-index: 9999;
+}
 
 .newsletter-email {
     position: relative;
@@ -1015,7 +1033,9 @@ input#newsletter-subscribe-button {
 .section-newsletter .container {
     display: flex;
 }
-/*Footer*/
+/* --- End of newsletter --- */
+
+/* --- Start of footer --- */
 .footer {
     color: #3c3c3b;
     font-weight: 400;
@@ -1154,7 +1174,7 @@ img.footer-logo {
 .mobile-logo-payment {
     display: none;
 }
-/*Home End*/
+/* ======================== HOME PAAGEEnd ========================  */
 /*Desktop Schemes*/
 @media all and (min-width: 1001px) {
     /*background-color*/
