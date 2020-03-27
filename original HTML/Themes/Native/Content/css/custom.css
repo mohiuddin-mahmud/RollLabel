@@ -3918,6 +3918,14 @@ button.checkout-button {
 @media all and (max-width: 690px) {
 
     /*Home Page*/
+    .hero-image {
+        height: 434px;
+        display: flex;
+    }
+    .hero-image img {
+        width: 100%;        
+        object-fit: cover;
+    }
     /*Product Box*/
     .item-box {
         width: 100%;
@@ -4076,30 +4084,22 @@ button.checkout-button {
     .responsive-nav-wrapper > div > a.phone {
         display: none;
     }
-    /*Home Page*/
-    .hero-text h1 {
-        font-size: 20px;
-        line-height: 26px;
-    }
-
-    .description {
-        padding: 8px 30px 22px;
-    }
+    /*Home Page*/ 
     /*Product Box*/
-    .item-box {
-        /*width: Calc(50% - 2%);*/
+    .item-box {  
         width: 100%;
         flex-grow: unset;
         margin: 0px 0px 30px !important;
     }
-
+    .description {
+        padding: 8px 30px 22px;
+    }
     .item-grid {
         justify-content: center;
     }
-
-        .item-grid .item-box:last-child {
-            margin-bottom: 0px !important;
-        }
+    .item-grid .item-box:last-child {
+        margin-bottom: 0px !important;
+    }
     /*Customer Say*/
     .customer-review {
         padding: 47px 0 0 0;
@@ -4372,7 +4372,7 @@ button.checkout-button {
     /*Customer Say*/
     .customer-review .review-body {
         line-height: 167.5%;
-    }
+    }    
     /*Request Callback*/
     .request-callback {
         padding: 70px 50px !important;
@@ -4421,6 +4421,12 @@ button.checkout-button {
     .footer-block .title {
         margin-bottom: 2px;
     }
+    img.footer-logo {
+        margin-top: 36px;
+    }
+    .footer-lower{
+        line-height:18px;
+    }
 }
 
 @media all and (min-width: 1120px) {
@@ -4454,6 +4460,11 @@ button.checkout-button {
     }
 }
 
+@media all and (min-width: 1150px) {
+    .customersay-picture {
+        width: unset;
+    }
+}
 @media all and (min-width: 1200px) {
     /* Template */
 
