@@ -3610,7 +3610,7 @@ button.checkout-button {
         line-height: 137.5%;
     }
     .hero-text {
-        width: 76%;
+        width: 78%;
     }
     /*Text Block*/
     .home-page .text-container {
@@ -3926,6 +3926,9 @@ button.checkout-button {
         width: 100%;        
         object-fit: cover;
     }
+    .hero-text h1 {      
+        padding-bottom: 30px;
+    }
     /*Product Box*/
     .item-box {
         width: 100%;
@@ -4118,31 +4121,11 @@ button.checkout-button {
 }
 
 @media all and (max-width: 475px) {
-    /*buttons*/
-    .button-3 {
-        height: 26px;
-        font-size: 12px;
-    }
-    /*Home Page*/
-    .hero-text h1 {
-        font-size: 13px;
-        line-height: 18px;
-        padding-bottom: 24px;
-    }
+      
 }
 
 @media all and (max-width: 375px) {
-    /*buttons*/
-    .button-3 {
-        height: 26px;
-        font-size: 12px;
-    }
-    /*Home Page*/
-    .hero-text h1 {
-        font-size: 12px;
-        line-height: 16px;
-        padding-bottom: 12px;
-    }
+  
 }
 
 @media all and (min-width: 769px) {
