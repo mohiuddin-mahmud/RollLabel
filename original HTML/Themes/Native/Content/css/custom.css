@@ -2220,6 +2220,39 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 
 /*********** Product details *******************************/
+.d-block{
+    display:block;
+}
+/*Tooltip*/
+.tooltip {
+    background: url("../img/tooltipbg.png") no-repeat;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+    .tooltip:before {
+        background: url("../img/ico-question.png") no-repeat;
+        width: 5px;
+        height: 7px;
+        content: "";
+        display: flex;
+    }
+.custom-tooltip {
+    padding: 26px 16px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 238px;
+}
+
 /*Progress*/
 .progress {
     background: rgba(118, 188, 60, 0.05);
@@ -2239,6 +2272,24 @@ ul.flags a.selected img, ul.flags a:hover img {
     font-size: 12px;
     padding-right: 11px;
 }
+
+/*change-shape*/
+.change-shape {
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 42px;
+    color: rgba(60, 60, 59, 0.1);
+}
+
+    .change-shape:before {
+        display: flex;
+        content: "";
+        width: 12px;
+        height: 7px;
+        background: url("../img/arrow-up.png") no-repeat;
+    }
 
 .flex-unset {
     flex: unset !important;
@@ -2261,83 +2312,34 @@ ul.flags a.selected img, ul.flags a:hover img {
     left: 0;
     right: 0;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #fff;
     margin-top: 56px;
 }
-
-.step {
-    position: relative;
-    display: none;
-}
-
-    .step label {
-        font-size: 20px;
-        color: #3C3C3B;
-        font-weight: bold;
-    }
-
 .btn-link {
     color: #66B22E;
 }
-
 .rounded-0 {
     border-radius: 0px !important;
 }
-/*Tooltip*/
-.tooltip {
-    background: url("../img/tooltipbg.png") no-repeat;
-    width: 13px;
-    height: 13px;
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    color: #fff;
-    font-size: 10px;
+
+/*Text Widget*/
+.text-card {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999999;
+    padding: 50px 0px;
+    line-height: 24px;
+    text-align: center;
 }
-
-    .tooltip:before {
-        background: url("../img/ico-question.png") no-repeat;
-        width: 5px;
-        height: 7px;
-        content: "";
-        display: flex;
-    }
-
-.custom-tooltip {
-    padding: 26px 16px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    max-width: 238px;
-}
-
 .card-text {
     width: auto;
     position: relative;
 }
-
-.text-card {
-    display: flex;
-    padding: 70px 0px;
-    line-height: 24px;
-    text-align: center;
-}
-
     .text-card .card-text {
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
         line-height: 167.5%;
-        color: #3C3C3B;
+        color: #3C3C3B !important;
         padding-top: 23px;
-        color: #666;
         max-width: 440px;
         margin: auto;
     }
@@ -2369,15 +2371,24 @@ ul.flags a.selected img, ul.flags a:hover img {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+.card .card-body {    
+    background: #fafafa;
+}
+/*.card-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
     align-items: center;
-}
+    background: #fafafa;
+}*/
 
 .card .button-2, .card-body-list .button-2 {
-    border-radius: 0px;
-    height: 36px;
-    /*padding: 7px 0px;*/
+    border-radius: 0px;   
     font-size: 16px !important;
+    line-height: 1;
+    padding: 9px 0px 10px
 }
 
 .card h3 {
@@ -2385,53 +2396,47 @@ ul.flags a.selected img, ul.flags a:hover img {
     text-align: center;
     padding: 32px 0px 30px;
 }
-
-/*change-shape*/
-.change-shape {
-    flex-direction: column;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    padding-top: 42px;
-    color: rgba(60, 60, 59, 0.1);
+/* Steps Common Styles*/
+.step {
+    position: relative;
+    display: none;
 }
-
-    .change-shape:before {
-        display: flex;
-        content: "";
-        width: 12px;
-        height: 7px;
-        background: url("../img/arrow-up.png") no-repeat;
+    .step label {
+        font-size: 20px;
+        color: #3C3C3B;
+        font-weight: bold;
     }
-
 .step-active {
     display: block;
 }
-
 .stepbgcolor {
     background: #fafafa;
 }
-
-/*Step 1*/
-#step1 {
+.c-gray-light {
+    color:#b5b5b5;
 }
-
+.change-shape .text-card{
+    padding-top:50px;
+}
+/*Step 1*/
+#step1 .text-card{
+    padding: 120px 0px 66px;
+}
     #step1 h3.card-text {
         width: auto;
         position: relative;
     }
-
     #step1 .tooltip {
-        top: 21px;
-        right: -22px;
+        top: 22px;
+        right: -20px;
     }
-
-
+    #step1 {
+        padding-bottom: 26px;
+    }
 /*Step 2*/
-.step2 {
-    background: #fafafa;
+#step2{
+    padding-bottom:48px;
 }
-
 .form-group > .form-control {
     position: relative;
     -webkit-box-flex: 1;
@@ -2440,13 +2445,11 @@ ul.flags a.selected img, ul.flags a:hover img {
     width: 1%;
     margin-bottom: 0;
 }
-
 .input-group-append {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-
 .card.form-card {
     width: 334px;
     margin: auto;
@@ -2455,16 +2458,14 @@ ul.flags a.selected img, ul.flags a:hover img {
     flex: unset;
     padding-top: 27px;
 }
-
 #step2 input[type=text] {
     background: #fafafa;
     font-size: 14px;
     font-weight: 300;
-    color: #000000;
+    color: #3C3C3B;
     padding: 0 22px;
     width: 100%;
 }
-
 #step2 .button-2 {
     margin-top: 18px;
 }
@@ -2483,11 +2484,9 @@ ul.flags a.selected img, ul.flags a:hover img {
     }
 
 /*Step 2b*/
-.step2b {
-    background: #fafafa;
+#step2b{
+    padding-bottom:48px;
 }
-
-
 .card .input-group {
     width: 238px;
     padding: 12px 0 28px;
@@ -2505,15 +2504,16 @@ ul.flags a.selected img, ul.flags a:hover img {
     .card .input-group input[type=text] {
         font-size: 14px !important;
         background: #FAFAFA;
-        height: 40px;
+        height: 39px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         line-height: 1;
+        color:#3C3C3B;
     }
 
     .card .input-group input[type=button] {
         font-size: 16px !important;
-        height: 40px;
+        height: 39px;
         width: 101px;
         line-height: 1;
     }
@@ -2530,21 +2530,37 @@ ul.flags a.selected img, ul.flags a:hover img {
 #step2b .card .input-group input[type=text] {
     width: 154px;
     margin: unset;
+    padding-left:22px;
 }
 
 #step2b .button-2 {
-    margin-top: 2px;
+    margin-top: 4px;
     background: #fff;
     border: 1px solid #66B22E;
     color: #66B22E;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+#step2b .button-2:hover {   
+    color: #fff;    
+}
+.additional-price{
+    font-size:16px;
+    color: #cfcfcf;
+    margin-left:9px;
+}
+#step2b .form-card {
+    padding-top: 41px;
+}
 /*Step 3*/
 #step3 {
     max-width: 690px;
     margin: auto;
+    padding-bottom:26px;
+}
+
+#step3 .text-card {
+    padding-bottom:88px;
 }
 
     #step3 h3 {
@@ -2559,15 +2575,18 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /*Step 4*/
 #step4 {
-    margin: auto;
-    background: #fafafa;
+    padding-bottom:2px;
+}
+
+#step4 .text-card {
+    padding-bottom:66px;
 }
 
 .checkbox-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
     flex-flow: wrap;
 }
 
@@ -2582,8 +2601,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     }
 
     .checkbox-wrapper label {
-        font-size: 18px;
-        color: #000;
+        font-size: 18px;       
         font-weight: bold;
         width: 100%;
         height: 100%;
@@ -2602,46 +2620,41 @@ ul.flags a.selected img, ul.flags a:hover img {
     background: #66b22e !important;
     color: #fff !important;
 }
+.checkbox-wrapper [type="checkbox"]:checked ~ span.tooltip {
+    background: url(../img/tooltipbg-white.png) no-repeat;
+}
 
-#step4 .button-2 {
+.checkbox-wrapper [type="checkbox"]:checked ~ span.tooltip:before {
+    background: url(../img/ico-question-gr.png) no-repeat;    
+}
+
+.button-2.btn-continue {
     max-width: 322px;
-    height: 34px;
+    height: 35px;
     margin: auto;
+    font-size: 16px !important;
     border-radius: 10px;
 }
 
 /*Step 5*/
 #step5 {
-    margin: auto;
+    padding-bottom:65px;
 }
-
-    #step5 .button-2 {
-        max-width: 322px;
-        height: 34px;
-        margin: auto;
-        border-radius: 10px;
-    }
-
-    #step5 .checkbox-wrapper label {
-        font-size: 18px;
-        color: #000;
-        font-weight: bold;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        background: #fafafa;
-    }
-
+#step5 .text-card {
+    padding-bottom:66px;
+}
+#step5 .checkbox-wrapper label {
+        background: #FAFAFA;
+}
 
 /*Step 6*/
 #step6 {
     max-width: 690px;
     margin: auto;
 }
-
+#step6 .text-card{
+    padding-bottom:66px;
+}
     #step6 h3 {
         position: relative;
         width: auto;
@@ -2654,36 +2667,28 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /*Step 8*/
 #step8 {
-    width: 100%;
-    margin: auto;
-    background: #fafafa;
+    padding-bottom:118px;
 }
-
+#step8 .text-card {   
+    padding-top: 122px;     
+    padding-bottom: 66px;    
+}
 .radio-buttons-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 56px;
 }
 
     .radio-buttons-wrapper .radio-btn {
-        width: 80px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 82px;
+        height: 63px;       
         margin: 0 21px;
     }
 
     .radio-buttons-wrapper label {
         font-size: 18px;
-        color: #000;
-        font-weight: bold;
+        color: #3C3C3B;        
         width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 100%;  
+        font-weight: bold;     
         border-radius: 10px;
         background: #fff;
     }
@@ -2696,23 +2701,36 @@ ul.flags a.selected img, ul.flags a:hover img {
     background: #66b22e;
     color: #fff;
 }
-
-#step8 .button-2 {
-    max-width: 322px;
-    height: 34px;
-    margin: auto;
-    border-radius: 10px;
+#step8 .radio-buttons-wrapper {
+    padding-bottom: 58px;
 }
-
 /*Step 9*/
+#step9 {    
+   padding-bottom:84px;
+}
 #step9 .card.form-card {
     padding-top: 0px;
 }
+#step9 .text-card {    
+    padding: 121px 0px 66px;    
+}
 
 #step9 .input-group {
-    height: 80px;
+    height: 83px;
     background: #fafafa;
     width: 100%;
+}
+
+#step9 .card-body-list {    
+    background:#fdfdfd;
+    padding-top: 20px;
+}
+#step9 .list-group {
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+#step9 .list-group li{
+    padding: 0 37px;
 }
 
 .upload-btn-wrapper {
@@ -2724,14 +2742,11 @@ ul.flags a.selected img, ul.flags a:hover img {
 }
 
 .uploadbtn {
+    padding: 10px 0px 11px;
     border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    height: 40px;
-    background: #66B22E;
-    color: #fff;
+    height: 39px;
     width: 142px;
-    border: 0px;
+
 }
 
 .upload-btn-wrapper input[type=file] {
@@ -2754,15 +2769,44 @@ ul.flags a.selected img, ul.flags a:hover img {
     margin: auto;
 }
 
-#step9 .list-group {
-    padding-top: 8px;
-    padding-bottom: 21px;
-    background: #fdfdfd;
+/*Step9b*/
+
+#step9b {    
+   padding-bottom:41px;
 }
+#step9b .card.form-card {
+    padding-top: 0px;
+}
+#step9b .text-card {    
+    padding: 55px 0px 66px;    
+}
+
+#step9b .input-group {
+    height: 83px;
+    background: #fafafa;
+    width: 100%;
+}
+
+#step9b .card-body-list {    
+    background:#fdfdfd;
+    padding-top: 20px;
+}
+#step9b .list-group {
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+#step9b .list-group li{
+    padding: 0 37px;
+    margin-bottom: 1px;
+}
+
 
 /*Step10*/
 #step10 {
-    background: #FAFAFA;
+   padding-bottom:72px;
+}
+ #step10 .text-card {
+    padding: 75px 0px 66px;
 }
 
     #step10 .card-body-list {
@@ -2772,12 +2816,12 @@ ul.flags a.selected img, ul.flags a:hover img {
     }
 
     #step10 .list-group-item {
-        height: 40px;
+        height: 39px;
         border-radius: 50px;
         background: #FAFAFA;
         width: Calc(50% - 14px);
         display: flex;
-        margin: 6px 7px;
+        margin: 6px 7px 7px;
         padding: 0 20px;
     }
 
@@ -2790,6 +2834,8 @@ ul.flags a.selected img, ul.flags a:hover img {
 
         #step10 .list-group-item input:first-child {
             width: 65%;
+            color: #b2b2b2;
+            font-size: 13px !important;
         }
 
         #step10 .list-group-item input:last-child {
@@ -2802,58 +2848,108 @@ ul.flags a.selected img, ul.flags a:hover img {
         padding: 14px 32px 26px;
     }
 
-/******Step 11******/
-
+/*Step 11*/
 #step11 {
-    background: #fff;
+ padding-bottom:121px;  
 }
 
-    #step11 .card {
-        width: 239px;
+#step11 .text-card {    
+    padding: 122px 0px 50px;    
+}
+
+    #step11 .card-body-list {
+        padding: 20px 35px 32px;
+    }
+
+    #step11 .card.form-card {
+        padding-top: 18px;
+    }
+
+.card-body-list .row {
+    justify-content: space-around;
+    text-align: left;
+    padding-bottom:1px;
+}
+
+    .card-body-list .row .col-sm {
+        text-align: left;
+        flex-grow: 1;
+        font-size: 13px;
+    }
+
+        .card-body-list .row .col-sm:first-child {
+            width: 38px;
+        }
+
+        .card-body-list .row .col-sm:nth-child(2) {
+            width: 35px;
+        }
+
+        .card-body-list .row .col-sm:last-child {
+            width: 27px;
+        }
+
+/******Step 12******/
+
+#step12 {
+    padding-bottom:84px;
+}
+#step12 .text-card {    
+    padding: 122px 0px 40px;    
+}
+    #step12 .card {
+        width: 245px;
         flex: unset;
         background: unset;
         padding: 0px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     }
-
-        #step11 .card .input-group, #step11 .card .input-group input {
+    #step12 .card .input-group {
+    width: 245px;    
+}
+        #step12 .card .input-group, #step12 .card .input-group input {
             margin: 0px;
             padding: 0px;
         }
 
-            #step11 .card .input-group input[type=text] {
+            #step12 .card .input-group input[type=text] {
                 padding: 0 21px;
             }
 
-    #step11 .input-group-append {
+    #step12 .input-group-append {
         position: absolute;
         right: 0px;
     }
 
-    #step11 .single-form-card .card {
+    #step12 .single-form-card .card {
         box-shadow: unset !important;
     }
 
-    #step11 .single-form-card .button-1 {
+    #step12 .single-form-card .button-1 {
         background: #fff !important;
         border: 1px solid #66B22E !important;
         border-radius: 50px;
         color: #66B22E !important;
     }
 
-    #step11 .card .card-body {
-        padding: 19px 0 29px;
+    #step12 .card .card-body {
+        padding: 19px 0 11px;
         background: #fafafa;
     }
 
-    #step11 .card-body-list {
+    #step12 .card-body-list {
         padding-top: 0px;
     }
 
-    #step11 .single-form-card {
+    #step12 .single-form-card {
         padding: 0 0 60px;
     }
-/*Step 15*/
+    #step12 .card .price {
+        border:0px; 
+        height: auto;
+        padding: 10px 0 11px;
+    }
+/*Step 13*/
 .card-body p {
     color: rgba(0, 0, 0, 0.2);
     font-size: 12px;
@@ -2863,11 +2959,16 @@ ul.flags a.selected img, ul.flags a:hover img {
     display: flex;
 }
 
-#step11b {
-    background: #fafafa;
+#step13 {
+   padding-bottom:14px;
 }
-
-    #step11b .card {
+#step13 .text-card {   
+    padding: 108px 0px 48px;    
+}
+#step13 .list-group li{
+  margin-bottom:1px;
+}
+    #step13 .card {
         width: 239px;
         flex: unset;
         background: #FAFAFA;
@@ -2903,7 +3004,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     position: relative;
 }
 
-#step11b .card .card-body {
+#step13 .card .card-body {
     padding: 19px 0 11px;
 }
 
