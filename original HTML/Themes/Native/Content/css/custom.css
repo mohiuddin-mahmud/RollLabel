@@ -2273,8 +2273,8 @@ ul.flags a.selected img, ul.flags a:hover img {
     padding-right: 11px;
 }
 
-/*change-shape*/
-.change-shape {
+/*step-back-btn*/
+.step-back-btn {
     flex-direction: column;
     font-size: 14px;
     font-weight: bold;
@@ -2283,7 +2283,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     color: rgba(60, 60, 59, 0.1);
 }
 
-    .change-shape:before {
+    .step-back-btn:before {
         display: flex;
         content: "";
         width: 12px;
@@ -2297,6 +2297,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 .mw-1250 {
     max-width: 1250px;
+    padding:0 50px;
     margin: auto;
 }
 
@@ -2415,28 +2416,14 @@ ul.flags a.selected img, ul.flags a:hover img {
 .c-gray-light {
     color:#b5b5b5;
 }
-.change-shape .text-card{
+.step-back-btn .text-card{
     padding-top:50px;
 }
-/*Step 1*/
-#step1 .text-card{
-    padding: 120px 0px 66px;
+.m-title{
+    display:none;
 }
-    #step1 h3.card-text {
-        width: auto;
-        position: relative;
-    }
-    #step1 .tooltip {
-        top: 22px;
-        right: -20px;
-    }
-    #step1 {
-        padding-bottom: 26px;
-    }
-/*Step 2*/
-#step2{
-    padding-bottom:48px;
-}
+
+/*Form Group*/
 .form-group > .form-control {
     position: relative;
     -webkit-box-flex: 1;
@@ -2445,6 +2432,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     width: 1%;
     margin-bottom: 0;
 }
+/*Input Group*/
 .input-group-append {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2458,130 +2446,54 @@ ul.flags a.selected img, ul.flags a:hover img {
     flex: unset;
     padding-top: 27px;
 }
-#step2 input[type=text] {
-    background: #fafafa;
-    font-size: 14px;
-    font-weight: 300;
-    color: #3C3C3B;
-    padding: 0 22px;
-    width: 100%;
-}
-#step2 .button-2 {
-    margin-top: 18px;
-}
-
+/*Card*/
 .card .form-group {
     width: 100%;
     padding: 12px 48px;
 }
-
-    .card .form-group:nth-child(2) {
-        padding-bottom: 15px;
-    }
-
-    .card .form-group label {
-        padding-bottom: 21px;
-    }
-
-/*Step 2b*/
-#step2b{
-    padding-bottom:48px;
+.card .form-group:nth-child(2) {
+    padding-bottom: 15px;
+}
+.card .form-group label {
+    padding-bottom: 21px;
 }
 .card .input-group {
     width: 238px;
     padding: 12px 0 28px;
     position: relative;
 }
-
-    .card .input-group:nth-child(2) {
-        padding-bottom: 15px;
-    }
-
-    .card .input-group label {
-        padding-bottom: 21px;
-    }
-
-    .card .input-group input[type=text] {
-        font-size: 14px !important;
-        background: #FAFAFA;
-        height: 39px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        line-height: 1;
-        color:#3C3C3B;
-    }
-
-    .card .input-group input[type=button] {
-        font-size: 16px !important;
-        height: 39px;
-        width: 101px;
-        line-height: 1;
-    }
-
+.card .input-group:nth-child(2) {
+    padding-bottom: 15px;
+}
+.card .input-group label {
+    padding-bottom: 21px;
+}
+.card .input-group input[type=text] {
+    font-size: 14px !important;
+    background: #FAFAFA;
+    height: 39px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    line-height: 1;
+    color:#3C3C3B;
+}
+.card .input-group input[type=button] {
+    font-size: 16px !important;
+    height: 39px;
+    width: 101px;
+    line-height: 1;
+}
 .card .input-group-prepend {
     padding-bottom: 9px;
 }
 
-#step2b .input-group-append {
-    position: absolute;
-    right: 0px;
-}
-
-#step2b .card .input-group input[type=text] {
-    width: 154px;
-    margin: unset;
-    padding-left:22px;
-}
-
-#step2b .button-2 {
-    margin-top: 4px;
-    background: #fff;
-    border: 1px solid #66B22E;
-    color: #66B22E;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-#step2b .button-2:hover {   
-    color: #fff;    
-}
 .additional-price{
     font-size:16px;
     color: #cfcfcf;
     margin-left:9px;
 }
-#step2b .form-card {
-    padding-top: 41px;
-}
-/*Step 3*/
-#step3 {
-    max-width: 690px;
-    margin: auto;
-    padding-bottom:26px;
-}
 
-#step3 .text-card {
-    padding-bottom:88px;
-}
-
-    #step3 h3 {
-        position: relative;
-        width: auto;
-    }
-
-    #step3 .tooltip {
-        top: 21px;
-        right: -22px;
-    }
-
-/*Step 4*/
-#step4 {
-    padding-bottom:2px;
-}
-
-#step4 .text-card {
-    padding-bottom:66px;
-}
-
+/*Step Checkbox*/
 .checkbox-wrapper {
     display: flex;
     align-items: center;
@@ -2628,12 +2540,128 @@ ul.flags a.selected img, ul.flags a:hover img {
     background: url(../img/ico-question-gr.png) no-repeat;    
 }
 
+/*Step Radio Button*/
+.radio-buttons-wrapper {
+    padding-bottom: 56px;
+}
+.radio-buttons-wrapper .radio-btn {
+    width: 82px;
+    height: 63px;       
+    margin: 0 21px;
+}
+.radio-buttons-wrapper label {
+    font-size: 18px;
+    color: #3C3C3B;        
+    width: 100%;
+    height: 100%;  
+    font-weight: bold;     
+    border-radius: 10px;
+    background: #fff;
+}
+.radio-btn input[type=radio] {
+    display: none;
+}
+.radio-buttons-wrapper [type="radio"]:checked + label {
+    background: #66b22e;
+    color: #fff;
+}
+
+/*Continue Button*/
 .button-2.btn-continue {
     max-width: 322px;
     height: 35px;
     margin: auto;
     font-size: 16px !important;
     border-radius: 10px;
+}
+/*Step 1*/
+#step1 .text-card{
+    padding: 120px 0px 66px;
+}
+    #step1 h3.card-text {
+        width: auto;
+        position: relative;
+    }
+    #step1 .tooltip {
+        top: 22px;
+        right: -20px;
+    }
+    #step1 {
+        padding-bottom: 26px;
+    }
+/*Step 2*/
+#step2{
+    padding-bottom:48px;
+}
+
+#step2 input[type=text] {
+    background: #fafafa;
+    font-size: 14px;
+    font-weight: 300;
+    color: #3C3C3B;
+    padding: 0 22px;
+    width: 100%;
+}
+#step2 .button-2 {
+    margin-top: 18px;
+}
+
+/*Step 2b*/
+#step2b{
+    padding-bottom:48px;
+}
+#step2b .input-group-append {
+    position: absolute;
+    right: 0px;
+}
+
+#step2b .card .input-group input[type=text] {
+    width: 154px;
+    margin: unset;
+    padding-left:22px;
+}
+
+#step2b .button-2 {
+    margin-top: 4px;
+    background: #fff;
+    border: 1px solid #66B22E;
+    color: #66B22E;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#step2b .button-2:hover {   
+    color: #fff;    
+}
+
+#step2b .form-card {
+    padding-top: 41px;
+}
+/*Step 3*/
+#step3 {
+    max-width: 690px;
+    margin: auto;
+    padding-bottom:26px;
+}
+
+#step3 .text-card {
+    padding-bottom:88px;
+}
+#step3 h3 {
+    position: relative;
+    width: auto;
+}
+#step3 .tooltip {
+    top: 21px;
+    right: -22px;
+}
+
+/*Step 4*/
+#step4 {
+    padding-bottom:2px;
+}
+
+#step4 .text-card {
+    padding-bottom:66px;
 }
 
 /*Step 5*/
@@ -2655,84 +2683,57 @@ ul.flags a.selected img, ul.flags a:hover img {
 #step6 .text-card{
     padding-bottom:66px;
 }
-    #step6 h3 {
-        position: relative;
-        width: auto;
-    }
+#step6 h3 {
+    position: relative;
+    width: auto;
+}
 
-    #step6 .tooltip {
-        top: 21px;
-        right: -22px;
-    }
-    #step6 .card .card-body {
-        background: #fff;
-    }
+#step6 .tooltip {
+    top: 21px;
+    right: -22px;
+}
+#step6 .card .card-body {
+    background: #fff;
+}
 
-/*Step 8*/
-#step8 {
+/*Step 7*/
+#step7 {
     padding-bottom:118px;
 }
-#step8 .text-card {   
+#step7 .text-card {   
     padding-top: 122px;     
     padding-bottom: 66px;    
 }
-.radio-buttons-wrapper {
-    padding-bottom: 56px;
-}
 
-    .radio-buttons-wrapper .radio-btn {
-        width: 82px;
-        height: 63px;       
-        margin: 0 21px;
-    }
-
-    .radio-buttons-wrapper label {
-        font-size: 18px;
-        color: #3C3C3B;        
-        width: 100%;
-        height: 100%;  
-        font-weight: bold;     
-        border-radius: 10px;
-        background: #fff;
-    }
-
-.radio-btn input[type=radio] {
-    display: none;
-}
-
-.radio-buttons-wrapper [type="radio"]:checked + label {
-    background: #66b22e;
-    color: #fff;
-}
-#step8 .radio-buttons-wrapper {
+#step7 .radio-buttons-wrapper {
     padding-bottom: 58px;
 }
-/*Step 9*/
-#step9 {    
+/*Step 8*/
+#step8 {    
    padding-bottom:84px;
 }
-#step9 .card.form-card {
+#step8 .card.form-card {
     padding-top: 0px;
 }
-#step9 .text-card {    
+#step8 .text-card {    
     padding: 121px 0px 66px;    
 }
 
-#step9 .input-group {
+#step8 .input-group {
     height: 83px;
     background: #fafafa;
     width: 100%;
 }
 
-#step9 .card-body-list {    
+#step8 .card-body-list {    
     background:#fdfdfd;
     padding-top: 20px;
 }
-#step9 .list-group {
+#step8 .list-group {
     padding-top: 8px;
     padding-bottom: 24px;
 }
-#step9 .list-group li{
+#step8 .list-group li{
     padding: 0 37px;
 }
 
@@ -2743,15 +2744,12 @@ ul.flags a.selected img, ul.flags a:hover img {
     height: 52px;
     padding-top: 12px;
 }
-
 .uploadbtn {
     padding: 10px 0px 11px;
     border-radius: 50px;
     height: 39px;
     width: 142px;
-
 }
-
 .upload-btn-wrapper input[type=file] {
     font-size: 100px;
     position: absolute;
@@ -2772,53 +2770,52 @@ ul.flags a.selected img, ul.flags a:hover img {
     margin: auto;
 }
 
-/*Step9b*/
+/*Step8b*/
 
-#step9b {    
+#step8b {    
    padding-bottom:41px;
 }
-#step9b .card.form-card {
+#step8b .card.form-card {
     padding-top: 0px;
 }
-#step9b .text-card {    
+#step8b .text-card {    
     padding: 55px 0px 66px;    
 }
 
-#step9b .input-group {
+#step8b .input-group {
     height: 83px;
     background: #fafafa;
     width: 100%;
 }
 
-#step9b .card-body-list {    
+#step8b .card-body-list {    
     background:#fdfdfd;
     padding-top: 20px;
 }
-#step9b .list-group {
+#step8b .list-group {
     padding-top: 8px;
     padding-bottom: 24px;
 }
-#step9b .list-group li{
+#step8b .list-group li{
     padding: 0 37px;
     margin-bottom: 1px;
 }
 
-
-/*Step10*/
-#step10 {
+/*Step9*/
+#step9 {
    padding-bottom:72px;
 }
- #step10 .text-card {
+ #step9 .text-card {
     padding: 75px 0px 66px;
 }
 
-    #step10 .card-body-list {
+    #step9 .card-body-list {
         width: 584px;
         border-radius: 10px;
         overflow: hidden;
     }
 
-    #step10 .list-group-item {
+    #step9 .list-group-item {
         height: 39px;
         border-radius: 50px;
         background: #FAFAFA;
@@ -2828,43 +2825,43 @@ ul.flags a.selected img, ul.flags a:hover img {
         padding: 0 20px;
     }
 
-        #step10 .list-group-item input[type=text] {
+        #step9 .list-group-item input[type=text] {
             background: #FAFAFA;
             border-radius: 0px;
             margin: 0px;
             padding: 0px;
         }
 
-        #step10 .list-group-item input:first-child {
+        #step9 .list-group-item input:first-child {
             width: 65%;
             color: #b2b2b2;
             font-size: 13px !important;
         }
 
-        #step10 .list-group-item input:last-child {
+        #step9 .list-group-item input:last-child {
             width: 35%;
             text-align: right;
         }
 
-    #step10 .list-group {
+    #step9 .list-group {
         flex-wrap: wrap;
         padding: 14px 32px 26px;
     }
 
-/*Step 11*/
-#step11 {
+/*Step 10*/
+#step10 {
  padding-bottom:121px;  
 }
 
-#step11 .text-card {    
+#step10 .text-card {    
     padding: 122px 0px 50px;    
 }
 
-    #step11 .card-body-list {
+    #step10 .card-body-list {
         padding: 20px 35px 32px;
     }
 
-    #step11 .card.form-card {
+    #step10 .card.form-card {
         padding-top: 18px;
     }
 
@@ -2908,8 +2905,8 @@ ul.flags a.selected img, ul.flags a:hover img {
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     }
     #step12 .card .input-group {
-    width: 245px;    
-}
+        width: 245px;    
+    }
         #step12 .card .input-group, #step12 .card .input-group input {
             margin: 0px;
             padding: 0px;
@@ -3696,27 +3693,7 @@ button.checkout-button {
     }
     .section-newsletter .subtitle {
         font-size: 18px;
-    }
-
-    /*Product Details Page - Printed Labels*/
-
-    .cards {
-    flex-wrap: wrap;
-    padding: 0 102px;
-    }
-    .card {  
-        margin: 0 15px 30px;      
-        flex: 0 0 44% !important;  
-    }
-    .text-card{
-        padding: 197px 0px 60px;
     }    
-    #step1 {
-        padding-bottom: 0px;
-    }
-    .step {
-        padding-bottom:95px !important;
-    }
     
     /*Footer*/
     .footer-upper > div {
@@ -3743,6 +3720,139 @@ button.checkout-button {
     }
     .footer-lower{
         display:none;
+    }
+
+    /*Product Details Page - Printed Labels*/
+    .mw-1250 {
+        padding: 0px;        
+    }
+    #step3 .mw-1250, #step6 .mw-1250{
+        display:flex;
+        justify-content:center;
+    }
+    /*#step6 .mw-1250 {
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+    }*/
+    /*#step1 .mw-1250, #step3 .mw-1250 {
+        padding: 60px;        
+    }*/
+    .cards {
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .cards.product-cards{        
+        padding: 0 90px;
+    }
+    .card.product-card {
+        margin: 0 15px 30px !important;
+        /*flex: 0 0 44% !important;*/
+        width:264px;
+    }
+    .card {  
+        margin: 0 auto 30px !important; 
+    }
+    .text-card{
+        padding: 197px 0px 60px !important;
+    }    
+    .text-card .card-text {
+        padding-top: 18px !important;        
+    }
+    #step1 {
+        padding-bottom: 0px;
+    }
+    .step {
+        padding-bottom:95px !important;
+        max-width:unset !important;
+    }
+    .step h1 {
+        font-size: 25px !important;
+    }
+    .step h3 {
+        font-size: 18px !important;
+    }
+    .step input[type=text] {
+        font-size:14px !important; 
+    }
+    h3.card-text {
+        width: 100% !important;
+        padding: 12px 0px 11px !important;        
+    }
+    .card-text .tooltip{
+        top: 6px !important;
+        right: 6px !important;
+    }
+    .step .button-2 {        
+        height: 30px !important;
+        padding: 0px !important;        
+    }
+    .card .button-2, .card-body-list .button-2 {
+        font-size: 16px !important;
+    }
+
+    /*Step Checkbox*/
+    .checkbox-wrapper {
+        padding-bottom: 0px;
+        max-height: 260px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+    .checkbox-wrapper .form-check {
+        margin: 20px 6px 0px;
+        width: 264px;
+        height: 63px;
+        display: inline-flex;
+    }
+    /*Step Continue button*/
+    .button-2.btn-continue {
+        height:36px !important;
+    }
+
+    /*Step Radio Button*/
+    .radio-buttons-wrapper  {
+        flex-wrap:wrap;
+        max-width: 590px;
+        margin: auto;
+    }
+    .radio-buttons-wrapper .radio-btn {
+        width: 117px;
+        height: 67px;
+        margin: 0 15px 30px !important;
+    }
+    .radio-buttons-wrapper .radio-btn:last-child {
+        margin-bottom: 0px !important;
+    }
+
+    /*All Steps*/
+    #step9 .card-body-list {
+        width: 498px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    #step9 .list-group {
+        flex-wrap: wrap;
+        padding: 14px 28px 26px;
+    }
+
+    /*Step Checkout*/
+    .step-checkout .cards{
+        max-width:558px;
+        margin:auto;
+        padding:0px;
+    }
+
+    /*Step Completed*/
+    .step-completed .cards .card {
+        display:none;
+    }
+    .step-completed .cards .card:nth-child(-n+2) {
+        display:block;
+    }
+    .step-completed .cards{
+        max-width:540px;
+        margin:auto;
     }
 }
 
@@ -4096,6 +4206,11 @@ button.checkout-button {
     .request-callback {
         padding: 60px 20px !important;
     }
+
+    /*Product Details Page*/
+    .mw-1250{
+        padding:0px !important;
+    }
 }
 
 @media all and (max-width: 690px) {
@@ -4309,8 +4424,11 @@ button.checkout-button {
 @media all and (max-width: 475px) {
 
     /*Product Details Page - Printed Labels*/
-    .change-shape {        
+    .step-back-btn {        
         padding-top: 20px;        
+    }
+    .m-title{
+        display:block;
     }
     .cards {    
         padding: 0px !important;
@@ -4319,6 +4437,10 @@ button.checkout-button {
     }
     .card {
         margin: 0 0px 30px;        
+    }
+    .card.product-card {
+        margin: 0 0px 30px !important;       
+        
     }
     .card-img-top{
         display:none;
@@ -4358,7 +4480,6 @@ button.checkout-button {
         padding:0 17px !important;
     }
     .card .button-2, .card-body-list .button-2{
-        font-size:14px !important; 
         padding: 7px 0px 7px;
     }
     .text-card .card-text {
@@ -4425,15 +4546,15 @@ button.checkout-button {
         flex-direction:column;
         max-height: 256px;  
         overflow: hidden;
-        margin-bottom: 40px;     
+        margin-bottom: 40px !important;     
     }
     .radio-buttons-wrapper .radio-btn {
-        width: 264px;
-        height: 49px;
-        margin: 20px 0px 0px;
+        width: 264px !important;
+        height: 49px !important;
+        margin: 20px 0px 0px !important;
     }
     .radio-buttons-wrapper .radio-btn:first-child{
-        margin-top:0px;        
+        margin-top:0px !important;        
     }
     /*Continue Button*/
     .button-2.btn-continue {
@@ -4454,11 +4575,129 @@ button.checkout-button {
         top: 6px !important;
         right: 6px !important;
     }
+    /* List Group Item*/
+    .list-group{        
+        padding: 19px 37px 4px !important;
+    }
+    .list-group-item{
+        padding: 0 17px !important;
+        margin:0px 0 20px !important;
+    }
 
     /***** All Steps *****/
     /*Step 1*/
     #step1 .text-card {
         padding: 136px 0px 66px;
+    }
+
+    /*upload-your-design*/
+    .upload-your-design .card.form-card{
+        padding-top: 0px !important;
+    }
+    .upload-your-design .tooltip{
+        display:none;
+    }
+    .upload-your-design .card .input-group {
+        padding-top:12px !important;
+    }
+    .upload-your-design .list-group{
+        padding:6px 0px 15px !important;
+    }
+    .upload-your-design .list-group-item {
+        padding: 0 28px !important;    
+        margin: 0px 0 5px !important;    
+    }
+    /*Step 9*/
+    #step9 .card-body-list {
+        width: 263px;   
+        padding-top: 21px;    
+    }
+    #step9 .list-group{
+        flex-direction:column;
+        padding: 19px 37px 4px;
+    }
+    #step9 .list-group-item{
+        width:100%;
+        
+    }
+    #step9 .tooltip{
+        display:none;
+    }
+    /*Configuration Step*/
+    .step-configuration h5{
+        font-size:11px !important; 
+    }
+    .step-configuration .card-body-list .row .col-sm {        
+        font-size: 11px !important;
+    }
+    .step-configuration .card-body-list {
+        padding: 0px 19px 13px !important;
+    }
+    .step-configuration .card.form-card {        
+        padding-top: 15px !important;
+    }
+    .step-configuration .card-body-list .row {        
+        padding-bottom: 3px;
+    }
+    .step-configuration .card-body-list .row .col-sm:first-child {
+        width: 65px;
+    }
+    .step-configuration .card-body-list .row .col-sm:nth-child(2) {
+        width: 54px;
+    }
+    .step-configuration .card-body-list .row .col-sm:last-child {
+        width: 15px;
+    }
+    /* Checkout Step */
+    .step-checkout .text-card{
+        display:none;
+    }
+    .step-checkout .card .input-group{
+        padding: 5px 0px 25px !important;
+    }
+    .step-checkout .cards .card{
+        display:none;
+        margin:auto;
+        width:239px;
+    }
+    .step-checkout .cards .card:first-child{
+        display:block;
+    }
+    .step-checkout .single-form-card .card{
+        padding-top: 70px !important;
+    }
+    .step-checkout .input-group-append{
+        right: 4px !important;
+    }
+    /*Completed Step*/
+    .step-completed .cards .card{
+        display:none;
+        margin:auto;
+    }
+    .step-completed .cards .card:first-child{
+        display:block;
+    }
+    .step-completed .list-group{
+        padding:0px 0px 14px !important
+    }
+    .step-completed .list-group-item{
+        padding: 0 24px !important;
+        margin: 0px 0 0px !important;
+    }
+    .step-completed .text-card{
+        display:none;
+    }
+    .step-completed .cards{
+        margin-top:100px
+    }
+    .step-completed .cards .card{
+        display:none !important;
+    }
+    .step-completed .cards .card:first-child {
+        display:block !important;
+    }
+    .list-group li a {    
+        text-align: left;
     }
 
     /*Custom Scrollbar*/
