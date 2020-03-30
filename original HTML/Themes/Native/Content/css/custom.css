@@ -2595,8 +2595,8 @@ ul.flags a.selected img, ul.flags a:hover img {
         align-items: center;
         justify-content: center;
         margin: 0 21px 42px;
-        width: 232px;
-        height: 60px;
+        width: 238px;
+        height: 63px;
         position: relative;
     }
 
@@ -3018,6 +3018,59 @@ ul.flags a.selected img, ul.flags a:hover img {
 .badge {
     color: #3C3C3B;
     text-align: right;
+}
+
+/*Thermal Labels Product Details Page*/
+
+.thermallabels #step6{
+    padding-bottom:48px;
+}
+
+.thermallabels #step6 input[type=text] {
+    background: #fafafa;
+    font-size: 14px;
+    font-weight: 300;
+    color: #3C3C3B;
+    padding: 0 22px;
+    width: 100%;
+}
+.thermallabels #step6 .button-2 {
+    margin-top: 18px;
+}
+
+.thermallabels #step7 {
+    padding-bottom:65px;
+}
+.thermallabels #step7 .text-card {
+    padding-bottom:66px;
+}
+.thermallabels #step7 .checkbox-wrapper label {
+        background: #FAFAFA;
+}
+
+.thermallabels #step8 {
+ padding-bottom:121px;  
+}
+
+.thermallabels #step8 .text-card {    
+    padding: 122px 0px 50px;    
+}
+
+.thermallabels #step8 .card-body-list {
+    padding: 20px 35px 32px;
+}
+
+.thermallabels #step8 .card.form-card {
+    padding-top: 18px;
+}
+.thermallabels #step8 .card-body-list .row .col-sm:first-child {
+    width: 90px;
+}
+.thermallabels #step8 .card-body-list .row .col-sm:nth-child(2) {
+    width: 56px;
+}
+.thermallabels #step8 .card-body-list .row .col-sm:last-child {
+    width: 10px;
 }
 
 /*********** Shopping basket *******************************/
@@ -3641,6 +3694,27 @@ button.checkout-button {
     .section-newsletter .subtitle {
         font-size: 18px;
     }
+
+    /*Product Details Page - Printed Labels*/
+
+    .cards {
+    flex-wrap: wrap;
+    padding: 0 102px;
+    }
+    .card {  
+        margin: 0 15px 30px;      
+        flex: 0 0 44% !important;  
+    }
+    .text-card{
+        padding: 197px 0px 60px;
+    }    
+    #step1 {
+        padding-bottom: 0px;
+    }
+    .step {
+        padding-bottom:95px !important;
+    }
+    
     /*Footer*/
     .footer-upper > div {
         text-align: left;
@@ -3699,6 +3773,12 @@ button.checkout-button {
 /*********** 768 *******************************/
 
 @media all and (max-width: 767px) {
+
+     /*Product Details Page - Printed Labels*/
+    .cards {        
+        padding: 0 54px;
+    }
+
     .container {
         padding: 60px 20px;
         margin: auto;
@@ -4183,6 +4263,9 @@ button.checkout-button {
 }
 
 @media all and (max-width: 575px) {
+     /*Product Details Page - Printed Labels*/
+    
+        
     /*Header*/
     .responsive-nav-wrapper > div > a.phone {
         display: none;
@@ -4221,6 +4304,133 @@ button.checkout-button {
 }
 
 @media all and (max-width: 475px) {
+
+    /*Product Details Page - Printed Labels*/
+    .change-shape {        
+        padding-top: 20px;        
+    }
+    .cards {    
+        padding: 0px !important;
+        flex:unset;
+        flex-direction:column;
+    }
+    .card {
+        margin: 0 0px 30px;        
+    }
+    .card-img-top{
+        display:none;
+    }
+    .card h3 {       
+        padding: 12px 0px 11px !important;
+    }
+    .text-card {
+        padding: 70px 0px 41px !important;
+    }
+    .card:last-child {
+        margin-bottom: 0px;
+    }
+    .step {
+        padding:0 56px 0px !important;    
+    }
+    .step h1{
+        font-size:19px !important; 
+    }
+    .step h3{
+        font-size:18px !important; 
+    }
+    .card.form-card {
+        width:100%;
+        padding-top: 26px !important;
+    }
+    /*Form Group*/
+    .card .form-group label {
+        padding-bottom: 14px;
+    }    
+    .card .form-group {
+        width: 100%;
+        padding: 0px 38px 25px !important;
+    }    
+    .form-group > .form-control{
+        padding:0 17px !important;
+    }
+    .card .button-2, .card-body-list .button-2{
+        font-size:14px !important; 
+        padding: 7px 0px 7px;
+    }
+    .text-card .card-text {
+        font-size:12px !important;
+        padding-top: 16px !important;
+    }
+    .step label {
+        font-size: 18px !important;   
+    }
+    .step input[type=text]{
+        font-size:13px !important; 
+    }
+    .step .button-2 {
+        margin-top: 0px !important;
+        height: 30px !important;
+        padding: 0px !important;
+    }
+
+    /*Input Group*/
+    #step2b .card .input-group {   
+        width: 100%;
+        padding: 12px 38px;
+    }
+    #step2b .input-group-append {        
+        right: 38px;
+    }
+    .card .input-group {        
+        padding: 5px 38px 25px !important;
+    }
+    .card .input-group input[type=text] {
+       padding: 0px 17px !important;
+       width:100% !important;
+       font-size: 13px !important;
+    }
+    .card .input-group input[type=button] {       
+        width: 80px;        
+        font-size: 13px !important;
+    }
+    .additional-price {
+        font-size: 11px;        
+        line-height: 11px;        
+        margin-top: 8px;
+    }
+
+    /*Step Checkbox*/
+    .checkbox-wrapper {        
+        padding-bottom: 20px;        
+    }
+    .checkbox-wrapper .form-check{
+        margin: 0 0px 20px;
+        width: 264px;
+        height: 49px;
+    }
+    /*Continue Button*/
+    .button-2.btn-continue {
+        height:36px !important;
+        width:264px;
+    }
+
+    /*Progress Bar*/
+    .progress-bar{
+        font-size:0px;
+    }
+    .progress-bar .counter{
+        font-size:12px;
+    }
+    /***** All Steps *****/
+    /*Step 1*/
+    #step1 .text-card {
+        padding: 136px 0px 66px;
+    }
+    .customer-support{
+        width: Calc(100% - 40px);
+        max-width: 100% !important;
+        margin: 103px 20px 0 !important;
+    }
       
 }
 
