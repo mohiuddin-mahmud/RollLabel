@@ -52,6 +52,10 @@
     <link rel="stylesheet"
           href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 
+    <!-- Scroll Plugin -->
+    <link rel="stylesheet" href="Themes/Native/Content/css/jquery.mCustomScrollbar.css" />
+    <script src="Themes/Native/Content/scripts/jquery.mCustomScrollbar.js"></script>
+
 </head>
 
 <body class="home-page-body  notAndroid23">
@@ -1187,13 +1191,23 @@
             
         };
 
+        /***** Scrollbar *****/
+        (function ($) {
+            $(window).on("load", function () {
+                $(".checkbox-wrapper, .radio-buttons-wrapper").mCustomScrollbar({
+                    scrollbarPosition: "outside",
+                    setLeft:8
+                });
+            });
+        })(jQuery);
+
         //tippy('.tooltip', {
         //    content: "I'm a Tippy tooltip!"
         //});
 
         //tippy('[data-tippy-content]');
 
-
+        /**** Tooltip ****/
         tippy(".tooltip", {
             content: 'Hello!',
             render(instance) {
@@ -1224,6 +1238,8 @@
             }
         });
     </script>
+
+    
 
 </body>
 </html>
