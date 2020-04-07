@@ -370,7 +370,7 @@
                                                     Rectangle
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                                 </h3>
-                                                <input onclick="GoToSection(2,18,null,true)" type="button" value="Select" class="button-2 step1btn">
+                                                <input onclick="GoToSection('step2a', true)" type="button" value="Select" class="button-2 step1btn">
                                             </div>
                                         </div>
                                         <div class="card product-card flex-unset">
@@ -380,7 +380,7 @@
                                                     Circle
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                                 </h3>
-                                                <input onclick="GoToSection(2,18,null,true)" type="button" id="#" value="Select" class="button-2 step1btn">
+                                                <input onclick="GoToSection('step2', true)" type="button" id="#" value="Select" class="button-2 step1btn">
                                             </div>
                                         </div>
                                         <div class="card product-card flex-unset">
@@ -390,7 +390,7 @@
                                                     Oval
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                                 </h3>
-                                                <input onclick="GoToSection(2,18,null,true)" type="button" id="#" value="Select" class="button-2">
+                                                <input onclick="GoToSection('step2a', true)" type="button" id="#" value="Select" class="button-2">
                                             </div>
                                         </div>
                                     </div>
@@ -399,7 +399,7 @@
 
 
                             <div id="step2" class="step step-diameter" data-title="Change Shape">
-                                <div onclick="GoToSection(5, 45, null, false)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step1', false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -421,12 +421,12 @@
                                         <input type="text" class="form-control" id="width" value="30">
                                     </div>
 
-                                    <input onclick="GoToSection(2, 18, 'a', true)" type="button" id="#" value="Select" class="button-2">
+                                    <input onclick="GoToSection('step3',false)" type="button" id="#" value="Select" class="button-2">
                                 </div>
                             </div>
 
                             <div id="step2a" class="step step-size2a" data-title="Change Shape">
-                                <div onclick="GoToSection(2,18,null,true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step1',false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -452,12 +452,12 @@
                                         <label for="height" class="d-flex  justify-content-center">Height(mm)</label>
                                         <input type="text" class="form-control" id="height" value="50">
                                     </div>
-                                    <input onclick="GoToSection(2, 18, 'b', true)" type="button" id="#" value="Select" class="button-2">
+                                    <input onclick="GoToSection('step2b', true)" type="button" id="#" value="Select" class="button-2">
                                 </div>
                             </div>
 
                             <div id="step2b" class="step step-size2b" data-title="Change Shape">
-                                <div onclick="GoToSection(2, 18, 'a', true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step2a', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -480,7 +480,7 @@
                                     <div class="input-group d-flex">
                                         <input type="text" class="form-control" id="standardsize" value="32mm x 50mm">
                                         <div class="input-group-append">
-                                            <input onclick="GoToSection(3,27,null,false)" type="button" class="button-1 form-control" value="Submit">
+                                            <input onclick="GoToSection('step3',false)" type="button" class="button-1 form-control" value="Submit">
                                         </div>
                                     </div>
                                     <div class="input-group-prepend">
@@ -489,7 +489,7 @@
                                     <div class="input-group d-flex">
                                         <input type="text" class="form-control" id="exactsize" value="30mm x 50mm">
                                         <div class="input-group-append">
-                                            <input onclick="GoToSection(3,27,null,false)" type="button" class="button-1 form-control" value="Submit">
+                                            <input onclick="GoToSection('step3',false)" type="button" class="button-1 form-control" value="Submit">
                                         </div>
                                     </div>
                                     <input type="button" id="#" value="Edit Size" class="button-2">
@@ -498,7 +498,7 @@
 
 
                             <div id="step3" class="step step-material-type" data-title="Change Sizing">
-                                <div onclick="GoToSection(2,18,'b', true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step2b', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -522,7 +522,7 @@
                                                     Paper
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                                 </h3>
-                                                <input onclick="GoToSection(4, 36, null, true)" type="button" id="#" value="Select" class="button-2">
+                                                <input onclick="GoToSection('step4', true)" type="button" id="#" value="Select" class="button-2">
                                             </div>
                                         </div>
                                         <div class="card product-card">
@@ -532,7 +532,7 @@
                                                     Waterproof Plastic
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                                 </h3>
-                                                <input onclick="GoToSection(4,36, null, true)" type="button" id="#" value="Select" class="button-2">
+                                                <input onclick="GoToSection('step4', true)" type="button" id="#" value="Select" class="button-2">
                                             </div>
                                         </div>
                                     </div>
@@ -541,7 +541,7 @@
                             </div>
 
                             <div id="step4" class="step material-type" data-title="Change Material Type">
-                                <div onclick="GoToSection(3,27,null, false)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step3',false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -623,14 +623,14 @@
                                         </div>
                                     </div>
 
-                                    <input onclick="GoToSection(5,45, null, false)" type="button" class="button-2 btn-continue br10" value="Continue" />
+                                    <input onclick="GoToSection('step5', false)" type="button" class="button-2 btn-continue br10" value="Continue" />
 
                                 </div>
 
                             </div>
 
                             <div id="step5" class="step step-metalic" data-title="Change Material">
-                                <div onclick="GoToSection(4,36, null, true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step4', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                     </div>
                                 </div>
@@ -658,13 +658,13 @@
 
                                     </div>
 
-                                    <input onclick="GoToSection(6,54, null, true)" type="button" class="button-2 btn-continue br10" value="Continue" />
+                                    <input onclick="GoToSection('step6', true)" type="button" class="button-2 btn-continue br10" value="Continue" />
                                 </div>
 
                             </div>
 
                             <div id="step5" class="step step-adhesive" data-title="Change Material">
-                                <div onclick="GoToSection(4,36, null, true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step4', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -707,13 +707,13 @@
                                         </div>
                                     </div>
 
-                                    <input onclick="GoToSection(6,54, null, true)" type="button" class="button-2 btn-continue br10" value="Continue" />
+                                    <input onclick="GoToSection('step6', true)" type="button" class="button-2 btn-continue br10" value="Continue" />
                                 </div>
 
                             </div>
 
                             <div id="step6" class="step step-finish" data-title="Change Adhesive">
-                                <div onclick="GoToSection(5,45, null, false)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step5', false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -737,7 +737,7 @@
                                                     Glossy
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                                 </h3>
-                                                <input onclick="GoToSection(8,72, null, true)" type="button" id="#" value="Select" class="button-2">
+                                                <input onclick="GoToSection('step8', true)" type="button" id="#" value="Select" class="button-2">
                                             </div>
                                         </div>
                                         <div class="card product-card">
@@ -747,7 +747,7 @@
                                                     Matt
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                                 </h3>
-                                                <input onclick="GoToSection(8,72, null, true)" type="button" id="#" value="Select" class="button-2">
+                                                <input onclick="GoToSection('step8', true)" type="button" id="#" value="Select" class="button-2">
                                             </div>
                                         </div>
                                     </div>
@@ -756,7 +756,7 @@
                             </div>
 
                             <div id="step8" class="step step-quantity-designs" data-title="Change Finish">
-                                <div onclick="GoToSection(6,54, null, true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step6', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -809,14 +809,14 @@
                                             <label class="d-flex justify-content-center align-items-center" for="value9">9</label>
                                         </div>
                                     </div>
-                                    <input onclick="GoToSection(9, 81, null, false)" type="button" class="button-2 btn-continue" value="Continue" />
+                                    <input onclick="GoToSection('step9', true)" type="button" class="button-2 btn-continue" value="Continue" />
                                 </div>
 
                             </div>
 
 
                             <div id="step9" class="step step-upload-or-email-your-design1" data-title="Change Number of Designs">
-                                <div onclick="GoToSection(8, 72, null, true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step8', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -849,7 +849,7 @@
 
                                                         </li>
                                                     </ul>
-                                                    <input onclick="GoToSection(9, 72, 'b', false)" type="button" id="#" value="Continue" class="button-2">
+                                                    <input onclick="GoToSection('step9b', true)" type="button" id="#" value="Continue" class="button-2">
                                                 </div>
                                             </div>
                                             <!-- Or -->
@@ -864,11 +864,11 @@
                                                 <p class="card-text">
                                                     Send us an email after ordering with your design at designs@rolllabels.co.uk
                                                 </p>
-                                                <input onclick="GoToSection(9, 81, null, true)" type="button" id="#" value="Continue" class="button-2">
+                                                <input onclick="GoToSection('step9b', true)" type="button" id="#" value="Continue" class="button-2">
                                             </div>
 
                                             <div class="card card-email-design-button">
-                                                <input onclick="GoToSection(9, 81, null, true)" type="button" id="#" value="Email Design" class="button-2">
+                                                <input  onclick="GoToSection('step9b', true)" type="button" id="#" value="Email Design" class="button-2">
                                                 <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
 
                                             </div>
@@ -878,7 +878,7 @@
                             </div>
 
                             <div id="step9b" class="step step-upload-or-email-your-design2" data-title="Change Number of Designs">
-                                <div onclick="GoToSection(9, 72, null, true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step9', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -926,7 +926,7 @@
                                                             <a class="d-flex" href="javascript:void(0)">Filename_6.pdf <span class="close"></span></a>
                                                         </li>
                                                     </ul>
-                                                    <input onclick="GoToSection(10, 90, null, true)" type="button" id="#" value="Continue" class="button-2">
+                                                    <input onclick="GoToSection('step10', true)" type="button" id="#" value="Continue" class="button-2">
                                                 </div>
                                             </div>
                                             <!-- Or -->
@@ -939,7 +939,12 @@
                                                 <p class="card-text">
                                                     Send us an email after ordering with your design at designs@rolllabels.co.uk
                                                 </p>
-                                                <input onclick="GoToSection(10, 90, null, true)" type="button" id="#" value="Continue" class="button-2">
+                                                <input onclick="GoToSection('step10', true)" type="button" id="#" value="Continue" class="button-2">
+                                            </div>
+                                            <div class="card card-email-design-button">
+                                                <input onclick="GoToSection('step9', true)" type="button" id="#" value="Email Design" class="button-2">
+                                                <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -949,7 +954,7 @@
 
 
                             <div id="step10" class="step step-configuration" data-title="Change Designs">
-                                <div onclick="GoToSection(9, 90, null, true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step9', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -1022,14 +1027,14 @@
                                             </div>
 
                                         </div>
-                                        <input onclick="GoToSection(10, 90, 'b', true)" type="button" id="#" value="Continue to Quantity" class="button-2">
+                                        <input onclick="GoToSection('step10b', true)" type="button" id="#" value="Continue to Quantity" class="button-2">
                                     </div>
                                 </div>
                             </div>
 
 
 
-                            <div id="step10b" class="step" data-title="Change Designs">
+                            <div id="step10b" class="step step-quantity" data-title="Change Designs">
                                 <div onclick="GoToSection(10, 90, null, false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
@@ -1044,7 +1049,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="card-body-list">
+                                    <div class="card-body-list box-shadow">
                                         <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                         <h3 class="m-title">Quantity</h3>
                                         <ul class="list-group d-flex">
@@ -1073,13 +1078,41 @@
                                                 <input type="text" value="25" />
                                             </li>
                                         </ul>
-                                        <input onclick="GoToSection(11, 99, null, false)" type="button" id="#" value="Submit" class="button-2 rounded-0">
+                                        <input onclick="GoToSection('step11', false)" type="button" id="#" value="Submit" class="button-2 rounded-0">
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- Display in Mobile View Only -->
+                            <!--<div id="step10b" class="step step-quantity" data-title="Change Designs">
+                                <div onclick="GoToSection('step10', false)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                    <div>
+                                        Change Shape
+                                    </div>
+                                </div>
+                                <div class="mw-1250">
+                                    <div class="text-card">
+                                        <div class="card-body">
+                                            <h1 class="card-title">How many labels would you like?</h1>
+                                            <p class="card-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body-list">
+                                        <h3 class="m-title">Quantity</h3>
+                                        <ul class="list-group d-flex">
+                                            <li class="list-group-item single-item d-flex justify-content-between align-items-center">
+                                                <input type="text" value="300" />
+                                            </li>
+                                        </ul>
+                                        <input onclick="GoToSection('step11', false)" type="button" id="#" value="Submit" class="button-2 rounded-0">
+                                    </div>
+                                </div>
+                            </div>-->
+
                             <div id="step11" class="step step-configuration" data-title="Change Number of Designs">
-                                <div onclick="GoToSection(10, 90, 'b', true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step10b', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -1152,13 +1185,15 @@
                                             </div>
 
                                         </div>
-                                        <input onclick="GoToSection(12, 100, null, false)" type="button" id="#" value="Continue to Quantity" class="button-2">
+                                        <input onclick="GoToSection('step12', false)" type="button" id="#" value="Continue to Quantity" class="button-2">
                                     </div>
                                 </div>
                             </div>
 
+
+
                             <div id="step12" class="step step-checkout" data-title="Back to Configuration">
-                                <div onclick="GoToSection(10, 90, null, true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step10', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -1177,7 +1212,7 @@
                                             <div class="input-group d-flex">
                                                 <input type="text" class="form-control" id="standardsize" value="300">
                                                 <div class="input-group-append">
-                                                    <input onclick="GoToSection(13, 100, null, true)" type="button" class="button-1 form-control" value="Submit">
+                                                    <input onclick="GoToSection('step13', true)" type="button" class="button-1 form-control" value="Submit">
                                                 </div>
                                             </div>
                                         </div>
@@ -1234,7 +1269,7 @@
                             </div>
 
                             <div id="step13" class="step step-completed" data-title="Back to Configuration">
-                                <div onclick="GoToSection(12, 100, null, false)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step12', false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -1608,8 +1643,14 @@
         <div class="size-tooltip-container">The leading edge of the roll will be the first dimension entered in the form. This is displayed as below:<div><div class="content-left"></div><div></div></div></div>
     </div>
     <script>
+        var isDiameter = false;
+        
+        var GoToSection = function (elId, bgcolor) {      
 
-        var GoToSection = function (stepNumber, percentage, extended, bgcolor) {
+           
+            var stepNumber = elId.match(/\d+/);
+            var percentage = stepNumber * 9;
+
             if (stepNumber == 12 || stepNumber == 13) {
                 var stepNumberTxt = stepNumber == 12 ? "Checkout" : stepNumber == 13 ? "Completed" : "";
                 $(".progress-bar").html("<span class='counter'>" + stepNumberTxt + "</span>");
@@ -1620,6 +1661,25 @@
                 $(".progress-bar").css("width", percentage + "%");
 
             }
+            $(".step-back-btn div").html($("#" + elId).attr("data-title"));
+            $(".step").removeClass("step-active");
+            
+
+            $("#" + elId).addClass("step-active");
+
+            $(".page-body").removeClass("stepbgcolor");
+            if (bgcolor)
+                $(".page-body").addClass("stepbgcolor");
+
+        };
+
+        var GoToDiameter = function (stepNumber, percentage, extended, bgcolor) {
+            
+           
+            $(".counter").text(stepNumber);
+            $(".progress-bar").css("width", percentage + "%");
+
+            
             $(".step-back-btn div").html($("#step" + stepNumber).attr("data-title"));
             $(".step").removeClass("step-active");
 

@@ -2944,20 +2944,20 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 
 /*Step9*/
-#step10b {
+.step-quantity {
     padding-bottom: 72px;
 }
-    #step10b .text-card {
+    .step-quantity .text-card {
         padding: 75px 0px 66px;
     }
 
-#step10b .card-body-list {
-    width: 584px;
-    border-radius: 10px;
-    overflow: hidden;
-}
+    .step-quantity .card-body-list {
+        width: 584px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
-    #step10b .list-group-item {
+    .step-quantity .list-group-item {
         height: 39px;
         border-radius: 50px;
         background: #FAFAFA;
@@ -2967,25 +2967,25 @@ ul.flags a.selected img, ul.flags a:hover img {
         padding: 0 20px;
     }
 
-        #step10b .list-group-item input[type=text] {
+        .step-quantity .list-group-item input[type=text] {
             background: #FAFAFA;
             border-radius: 0px;
             margin: 0px;
             padding: 0px;
         }
 
-        #step10b .list-group-item input:first-child {
+        .step-quantity .list-group-item input:first-child {
             width: 65%;
             color: #b2b2b2;
             font-size: 13px !important;
         }
 
-        #step10b .list-group-item input:last-child {
+        .step-quantity .list-group-item input:last-child {
             width: 35%;
             text-align: right;
         }
 
-    #step10b .list-group {
+    .step-quantity .list-group {
         flex-wrap: wrap;
         padding: 14px 32px 26px;
     }
@@ -3934,14 +3934,14 @@ button.checkout-button {
     }
     
     .step .button-2 {        
-        height: 30px !important;
+        height: 35px !important;
         padding: 0px !important;        
     }
     .card .button-2, .card-body-list .button-2 {
         font-size: 16px !important;
     }
 
-    /*Step Checkbox*/
+    /* Checkbox Button*/
     .checkbox-wrapper {
         padding-bottom: 0px;
         max-height: 260px;
@@ -3992,19 +3992,17 @@ button.checkout-button {
     }
 
     /*All Steps*/
-
+    /*Step Shape*/
+    .product-card .button-2 {
+        height: 30px !important;
+    }
     /*Step Diameter*/
     .step-diameter .card .form-group {
         padding-bottom: 37px;
     }
-    .step-diameter .button-2, .step-size .button-2, .step-size2a .button-2 {
-        height: 35px !important;
-    }
-
+   
     /*step-size*/
-    .step-size2b .button-2{
-        height:35px;
-    }
+    
     /*Step Upload Your Design or Email*/
     .card-email-design {
         display: none;
@@ -4018,10 +4016,13 @@ button.checkout-button {
     .upload-design-email-container > div > div:nth-child(2) {
         display: none !important;
     }
-    
+
     .upload-design-email-container > div {
         flex-direction: column;
-    }
+        margin: auto;
+        width: 100%;
+    }   
+    
     .upload-design-email-container .card-text {
         display: none !important;
     }
@@ -4065,9 +4066,11 @@ button.checkout-button {
             padding: 0px;
         }
 
+    /* Your Configuration*/
+    
     /*Step Completed*/
     .step-completed .cards .card {
-        display:none;
+        display: none;
     }
     .step-completed .cards .card:nth-child(-n+2) {
         display:block;
@@ -4707,11 +4710,17 @@ button.checkout-button {
         margin: 0 0px 30px;        
     }
     .card.product-card {
-        margin: 0 0px 30px !important;       
-        
+        margin: 0 auto 30px !important; 
     }
-    .card-img-top{
-        display:none;
+        .card.product-card .card-text {            
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+    .product-card .tooltip {
+        background: url(../img/ico-tooltip-light-bg.png) no-repeat !important;
+    }
+    .card-img-top {
+        display: none;
     }
     .card h3 {       
         padding: 12px 0px 11px !important;
@@ -4723,8 +4732,16 @@ button.checkout-button {
         margin-bottom: 0px;
     }
     .step {
-        padding:0 56px 0px !important;    
+        padding:0px !important;    
     }
+        .step .card-text {
+            padding-left: 56px !important;
+            padding-right: 56px !important;
+        }
+        .step .cards {
+            padding-left: 56px !important;
+            padding-right: 56px !important;
+        }
     .step h1{
         font-size:19px !important; 
     }
@@ -4764,6 +4781,7 @@ button.checkout-button {
         margin-top: 0px !important;
         height: 30px !important;
         padding: 0px !important;
+        font-size: 14px !important;
     }
 
     /*Input Group*/
@@ -4809,6 +4827,7 @@ button.checkout-button {
         margin-top:0px;        
     }
 
+
     /*Step Radio button*/
     .radio-buttons-wrapper {
         padding-bottom: 0px !important;
@@ -4827,8 +4846,9 @@ button.checkout-button {
     }
     /*Continue Button*/
     .button-2.btn-continue {
-        height:36px !important;
-        width:264px;
+        height: 36px !important;
+        width: 264px;
+        font-size: 16px !important;
     }
 
     /*Progress Bar*/
@@ -4841,8 +4861,8 @@ button.checkout-button {
 
     /*Tooltip*/
     .tooltip {
-        top: 6px !important;
-        right: 6px !important;
+        top: 0px !important;
+        right: 0px !important;
     }
     /* List Group Item*/
     .list-group{        
@@ -4852,6 +4872,18 @@ button.checkout-button {
         padding: 0 17px !important;
         margin:0px 0 20px !important;
     }
+    
+    /*form card*/
+    .card.form-card {
+        width: 263px !important;       
+    }
+    .card-email-design-button {
+        width: 263px !important;
+    }
+    /* Common Box shadow */
+    .box-shadow {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.02);
+    }
 
     /***** All Steps *****/
     /*Step 1*/
@@ -4859,27 +4891,65 @@ button.checkout-button {
         padding: 136px 0px 66px;
     }
 
-    /*upload-your-design*/
-    .upload-your-design .card.form-card{
-        padding-top: 0px !important;
+    /*Step Diameter*/
+    .step-diameter .card.form-card {
+        width:263px;
     }
-    .upload-your-design .tooltip{
+    /*Step Size*/
+    .step-size2a .card.form-card, .step-size2b .card.form-card {
+        width: 263px;
+    }
+    /*upload-your-design*/
+    .upload-design-email-container .card.form-card {
+        padding-top: 0px !important;
+        background: #FAFAFA;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    }
+    
+    .upload-design-email-container .card .input-group {
+        padding-top: 12px !important;
+    }
+    .upload-design-email-container .list-group {
+        padding: 6px 0px 15px !important;
+    }
+    .upload-design-email-container .list-group-item {
+        padding: 0 28px !important;
+        margin: 0px 0 5px !important;
+    }
+    .card-email-design-button {
+        width: 263px !important;
+    }
+    .upload-design-email-container .button-2 {
+        height: 35px !important;
+        font-size:16px !important;
+    }
+
+    .upload-design-email-container .tooltip{
         display:none;
     }
-    .upload-your-design .card .input-group {
-        padding-top:12px !important;
+    /*Step Quantity*/
+    .step-quantity .card-body-list {
+        width: 263px !important;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.02);
     }
-    .upload-your-design .list-group{
-        padding:6px 0px 15px !important;
+    .step-quantity .card-body-list .list-group  {
+        flex-direction:column;
     }
-    .upload-your-design .list-group-item {
-        padding: 0 28px !important;    
-        margin: 0px 0 5px !important;    
+    .step-quantity .list-group-item {
+        width: 100%;
     }
+
+    .single-item {
+        width: 100% !important;
+    }
+        .single-item input[type="text"] {
+            width: 100% !important;
+            text-align: left !important;
+        }
     /*Step 9*/
-    #step9 .card-body-list {
-        width: 263px;   
-        padding-top: 21px;    
+    /*#step9 .card-body-list {
+        width: 263px;
+        padding-top: 21px;
     }
     #step9 .list-group{
         flex-direction:column;
@@ -4891,10 +4961,10 @@ button.checkout-button {
     }
     #step9 .tooltip{
         display:none;
-    }
+    }*/
     /*Configuration Step*/
-    .step-configuration h5{
-        font-size:11px !important; 
+    .step-configuration h5 {
+        font-size: 11px !important;
     }
     .step-configuration .card-body-list .row .col-sm {        
         font-size: 11px !important;
@@ -4902,8 +4972,9 @@ button.checkout-button {
     .step-configuration .card-body-list {
         padding: 0px 19px 13px !important;
     }
-    .step-configuration .card.form-card {        
+    .step-configuration .card.form-card {
         padding-top: 15px !important;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     }
     .step-configuration .card-body-list .row {        
         padding-bottom: 3px;
@@ -4929,7 +5000,7 @@ button.checkout-button {
         margin:auto;
         width:239px;
     }
-    .step-checkout .cards .card:first-child{
+    .step-checkout .cards .card:nth-child(2n+1){
         display:block;
     }
     .step-checkout .single-form-card .card{
@@ -4938,10 +5009,16 @@ button.checkout-button {
     .step-checkout .input-group-append{
         right: 4px !important;
     }
-    /*Completed Step*/
-    .step-completed .cards .card{
+    .step-checkout .single-form-card {
         display:none;
-        margin:auto;
+    }
+    .step-checkout .cards {
+        margin-top:99px;
+    }
+    /*Completed Step*/
+    .step-completed .cards .card {
+        display: none;
+        margin: auto;
     }
     .step-completed .cards .card:first-child{
         display:block;
