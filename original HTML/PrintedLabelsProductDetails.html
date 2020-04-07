@@ -441,7 +441,7 @@
                                 </div>
 
                                 <div class="card form-card">
-                                    <button class="size-tooltip tooltip-light-bg"></button>
+                                    <span class="size-tooltip tooltip-light-bg"></span>
 
                                     <div class="form-group">
                                         <label for="width" class="d-flex justify-content-center">Width(mm)</label>
@@ -1621,7 +1621,10 @@
 
     </div>
 
-
+    <div id="my-template-id" style="display: none;">
+  <p>Fun <strong>non-interactive HTML</strong> here</p>
+  <img alt="cat" height="150" src="img/cat.jpg">
+</div>
     <!-- Google code for Analytics tracking -->
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -1639,8 +1642,14 @@
     </script>
 
     <div id="goToTop"></div>
-    <div id="template" >
-        <div class="size-tooltip-container">The leading edge of the roll will be the first dimension entered in the form. This is displayed as below:<div><div class="content-left"></div><div></div></div></div>
+    <div id="template" style="display:none;">
+        <div class="size-tooltip-container" id="size-tooltip-container">The leading edge of the roll will be the first dimension entered in the form. This is displayed as below:
+            <div class="d-flex">
+                <div class="content-left"></div>
+                <div class="size-tooltip-content-mid"><!--<img src='/Themes/Native/Content/img/ico-size-tooltip-left-arrow.png' />--></div>
+                <div class="size-tooltip-content-right">Leading Edge</div>
+            </div>
+        </div>
     </div>
     <script>
         var isDiameter = false;
@@ -1733,37 +1742,47 @@
 
         /**** Tooltip ****/
 
-        const template = document.getElementById('template');
+       // const template = document.getElementById('template');
 
-        
+        //tippy(".size-tooltip", {
+        //    //content: document.getElementById("#my-template-id"),
+        //    //allowHTML: true
+        //    content: '<div class="size-tooltip-container" style="display:block; font-size:16px;color:#000">The leading edge of the roll will be the first dimension entered in the form. This is displayed as below:<div><div class="content-left"></div><div></div></div></div>',
+        //    allowHTML: true,
+        //});
+        var ss = document.getElementById("template");
+        ss.prepend = '';
+        //tippy(".size-tooltip", {
+        //    content: ss.innerHTML,
+        //    allowHTML: true,
+        //    onShow(instance) {
+        //       console.log(instance);
+        //    },
+        //});
 
+       
 
-        tippy(".size-tooltip", {
-            content: template.innerHTML,
+        tippy(".size-tooltip", {           
+            allowHTML: true,            
             render(instance) {
+               // console.log(instance);
                 // The recommended structure is to use the popper as an outer wrapper
                 // element, with an inner `box` element
                 const popper = document.createElement('div');
                 const box = document.createElement('div');
                 //box.innerHTML = '';
                 popper.appendChild(box);
-                box.html
-                box.className = 'custom-tooltip';
+                
+                box.className = 'custom-tooltip size-custom-tooltip';
                 box.textContent = instance.props.content;
-                console.log(box);
-                console.log(box.textContent);
-                var str = '<div class="size-tooltip-container">The leading edge of the roll will be the first dimension entered in the form. This is displayed as below:<div><div class="content-left"></div><div></div></div></div>';
-                console.log($.parseHTML(str));
-                function onUpdate(prevProps, nextProps) {
-                    console.log(prevProps);
-                    console.log(nextProps);
+                box.innerHTML = ss.innerHTML;               
+                
+                function onUpdate(prevProps, nextProps) {                    
                     // DOM diffing
-                    if (prevProps.content == nextProps.content) {
-                        console.log("Tt");
+                    if (prevProps.content !== nextProps.content) {                        
                         box.textContent = nextProps.content;
                     }
                 }
-
                 // Return an object with two properties:
                 // - `popper` (the root popper element)
                 // - `onUpdate` callback whenever .setProps() or .setContent() is called

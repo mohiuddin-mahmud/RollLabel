@@ -2240,7 +2240,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     justify-content: center;
     z-index: 999999;
 }
-    .tooltip:before {
+    .tooltip:before, .size-tooltip:before {
         background: url("../img/ico-question.png") no-repeat;
         width: 5px;
         height: 7px;
@@ -2248,7 +2248,7 @@ ul.flags a.selected img, ul.flags a:hover img {
         display: flex;
     }
 .custom-tooltip {
-    padding: 26px 16px;
+    padding: 20px 16px 21px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -2256,6 +2256,33 @@ ul.flags a.selected img, ul.flags a:hover img {
     text-align:center;
 }
 
+.size-custom-tooltip {
+    padding: 20px 16px 13px;   
+}
+
+.size-tooltip-container {
+    font-size: 13px;
+    color: #3C3C3B;
+    text-align:center;
+    display:flex;    
+}
+
+    .size-tooltip-container > div {       
+        padding-top:13px;
+    }
+.size-tooltip-content-mid {
+    width: 10px;
+    height: 8px;
+    margin-top: 17px;
+    font-size: 0px;
+    margin-left: 1px;
+    background: url("../img/ico-size-tooltip-left-arrow.png") no-repeat;
+}   
+
+.size-tooltip-content-right{
+    padding-top:10px;
+    padding-left:5px;
+}
 /*Progress*/
 .progress {
     background: rgba(118, 188, 60, 0.05);
@@ -2621,6 +2648,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 .step-diameter {
     max-width: 690px;
     margin: auto;
+    padding-bottom:98px;
 }
 
     .step-diameter .text-card {
@@ -2679,24 +2707,19 @@ ul.flags a.selected img, ul.flags a:hover img {
     justify-content: center;
     z-index: 999999;
 }
-.size-tooltip-container {
-    display: flex;
-}
+
 
 .size-tooltip-container {
     display: flex;
+    flex-direction:column;
 }
+
 .content-left {
     background: url("../img/size-tooltip-img1.png") no-repeat;
     width:102px;
     height:69px;
 }
 
-.content-right {
-    background: url("../img/size-tooltip-img2.png") no-repeat;
-    width: 92px;
-    height: 22px;
-}
 /*Step 2b*/
 .step-size2b {
     padding-bottom: 48px;
