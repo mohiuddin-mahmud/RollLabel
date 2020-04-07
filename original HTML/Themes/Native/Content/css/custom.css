@@ -349,8 +349,10 @@ h2 {
 h4 {
     font-size: 18px;
 }
-
 h5 {
+    font-size: 16px;
+}
+h6 {
     font-size: 13px;
 }
 .center-1 {
@@ -2251,6 +2253,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     max-width: 238px;
+    text-align:center;
 }
 
 /*Progress*/
@@ -2349,6 +2352,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     display: flex;
     position: relative;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .card {
@@ -2392,6 +2396,10 @@ ul.flags a.selected img, ul.flags a:hover img {
     padding: 9px 0px 10px
 }
 
+.card-title {
+    /*max-width: 440px;*/
+    margin: auto;
+}
 .card h3 {
     width: 100%;
     text-align: center;
@@ -2421,6 +2429,11 @@ ul.flags a.selected img, ul.flags a:hover img {
 }
 .m-title{
     display:none;
+}
+
+/* Light Gray Background Color */
+.l-gray-bgcolor { 
+    background: #FAFAFA !important;
 }
 
 /*Form Group*/
@@ -2501,7 +2514,9 @@ ul.flags a.selected img, ul.flags a:hover img {
     padding-bottom: 16px;
     flex-flow: wrap;
 }
-
+.checkbox-wrapper label.bg-gray {
+    background: #FAFAFA;
+}
     .checkbox-wrapper .form-check {
         display: flex;
         align-items: center;
@@ -2532,11 +2547,11 @@ ul.flags a.selected img, ul.flags a:hover img {
     background: #66b22e !important;
     color: #fff !important;
 }
-.checkbox-wrapper [type="checkbox"]:checked ~ span.tooltip {
+.checkbox-wrapper [type="checkbox"]:checked ~ label span.tooltip {
     background: url(../img/tooltipbg-white.png) no-repeat;
 }
 
-.checkbox-wrapper [type="checkbox"]:checked ~ span.tooltip:before {
+.checkbox-wrapper [type="checkbox"]:checked ~ label span.tooltip:before {
     background: url(../img/ico-question-gr.png) no-repeat;    
 }
 
@@ -2544,11 +2559,11 @@ ul.flags a.selected img, ul.flags a:hover img {
 .radio-buttons-wrapper {
     padding-bottom: 56px;
 }
-.radio-buttons-wrapper .radio-btn {
-    width: 82px;
-    height: 63px;       
-    margin: 0 21px;
-}
+    .radio-buttons-wrapper .radio-btn {
+        width: 82px;
+        height: 63px;
+        margin: 0 21px 0px;
+    }
 .radio-buttons-wrapper label {
     font-size: 18px;
     color: #3C3C3B;        
@@ -2566,6 +2581,15 @@ ul.flags a.selected img, ul.flags a:hover img {
     color: #fff;
 }
 
+/* Product card */
+.cards.product-cards {
+    flex-wrap: wrap;
+}
+.product-card {
+    width: 334px;
+    flex: unset;
+}
+
 /*Continue Button*/
 .button-2.btn-continue {
     max-width: 322px;
@@ -2575,26 +2599,44 @@ ul.flags a.selected img, ul.flags a:hover img {
     border-radius: 10px;
 }
 /*Step 1*/
-#step1 .text-card{
+.step-shape .text-card{
     padding: 120px 0px 66px;
 }
-    #step1 h3.card-text {
+    .step-shape h3.card-text {
         width: auto;
         position: relative;
     }
-    #step1 .tooltip {
+    .step-shape .tooltip {
         top: 22px;
         right: -20px;
     }
-    #step1 {
+    .step-shape {
         padding-bottom: 26px;
     }
-/*Step 2*/
-#step2{
-    padding-bottom:48px;
+#step1 .product-card:last-child {
+    margin-top:21px;
 }
 
-#step2 input[type=text] {
+/*Step 2*/
+.step-diameter {
+    max-width: 690px;
+    margin: auto;
+}
+
+    .step-diameter .text-card {
+        padding-bottom: 66px;
+    }
+
+    .step-diameter h3 {
+        position: relative;
+        width: auto;
+    }
+   
+    .step-diameter .card .card-body {
+        background: #fff;
+    }
+
+.step-diameter input[type=text] {
     background: #fafafa;
     font-size: 14px;
     font-weight: 300;
@@ -2602,58 +2644,106 @@ ul.flags a.selected img, ul.flags a:hover img {
     padding: 0 22px;
     width: 100%;
 }
-#step2 .button-2 {
-    margin-top: 18px;
+.step-diameter .card .form-group {
+    padding-bottom: 43px;
 }
 
-/*Step 2b*/
-#step2b{
-    padding-bottom:48px;
+/*Step 2a*/
+.step-size2a {
+    padding-bottom: 48px;
 }
-#step2b .input-group-append {
+
+    .step-size2a input[type=text] {
+        background: #fafafa;
+        font-size: 14px;
+        font-weight: 300;
+        color: #3C3C3B;
+        padding: 0 22px;
+        width: 100%;
+    }
+    .step-size2a .button-2 {
+        margin-top: 18px;
+    }
+
+.size-tooltip {
+    background: url(../img/tooltipbg.png) no-repeat;
+    width: 13px;
+    height: 13px;
     position: absolute;
-    right: 0px;
+    top: 7px;
+    right: 7px;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+.size-tooltip-container {
+    display: flex;
 }
 
-#step2b .card .input-group input[type=text] {
-    width: 154px;
-    margin: unset;
-    padding-left:22px;
+.size-tooltip-container {
+    display: flex;
+}
+.content-left {
+    background: url("../img/size-tooltip-img1.png") no-repeat;
+    width:102px;
+    height:69px;
 }
 
-#step2b .button-2 {
-    margin-top: 4px;
-    background: #fff;
-    border: 1px solid #66B22E;
-    color: #66B22E;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+.content-right {
+    background: url("../img/size-tooltip-img2.png") no-repeat;
+    width: 92px;
+    height: 22px;
 }
-#step2b .button-2:hover {   
-    color: #fff;    
+/*Step 2b*/
+.step-size2b {
+    padding-bottom: 48px;
 }
+    .step-size2b .input-group-append {
+        position: absolute;
+        right: 0px;
+    }
 
-#step2b .form-card {
-    padding-top: 41px;
-}
+    .step-size2b .card .input-group input[type=text] {
+        width: 154px;
+        margin: unset;
+        padding-left: 22px;
+    }
+
+    .step-size2b .button-2 {
+        margin-top: 4px;
+        background: #fff;
+        border: 1px solid #66B22E;
+        color: #66B22E;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+        .step-size2b .button-2:hover {
+            color: #fff;
+        }
+
+    .step-size2b .form-card {
+        padding-top: 41px;
+    }
 /*Step 3*/
-#step3 {
-    max-width: 690px;
+.step-material-type {
+    /*max-width: 690px;*/
     margin: auto;
-    padding-bottom:26px;
+    padding-bottom: 26px;
 }
 
-#step3 .text-card {
-    padding-bottom:88px;
+.step-material-type .text-card {
+    padding-bottom: 88px;
 }
-#step3 h3 {
-    position: relative;
+.step-material-type h3 {
     width: auto;
 }
-#step3 .tooltip {
-    top: 21px;
-    right: -22px;
-}
+    .step-material-type .tooltip {
+        top: 21px;
+        right: -22px;
+    }
 
 /*Step 4*/
 #step4 {
@@ -2665,77 +2755,90 @@ ul.flags a.selected img, ul.flags a:hover img {
 }
 
 /*Step 5*/
-#step5 {
-    padding-bottom:65px;
+.step-adhesive, .step-metalic {
+    padding-bottom: 65px;
 }
-#step5 .text-card {
-    padding-bottom:66px;
-}
-#step5 .checkbox-wrapper label {
+    .step-adhesive .text-card, .step-metalic .text-card {
+        padding-bottom: 66px;
+    }
+    .step-adhesive.checkbox-wrapper label, .step-metalic.checkbox-wrapper label {
         background: #FAFAFA;
-}
+    }
+
 
 /*Step 6*/
-#step6 {
-    max-width: 690px;
+.step-finish {   
     margin: auto;
 }
-#step6 .text-card{
-    padding-bottom:66px;
-}
-#step6 h3 {
-    position: relative;
-    width: auto;
-}
 
-#step6 .tooltip {
-    top: 21px;
-    right: -22px;
-}
-#step6 .card .card-body {
-    background: #fff;
-}
+    .step-finish .text-card {
+        padding-bottom: 66px;
+    }
+
+    .step-finish h3 {
+        position: relative;
+        width: auto;
+    }
+
+    .step-finish .tooltip {
+        top: 21px;
+        right: -22px;
+    }
+
+    .step-finish .card .card-body {
+        background: #fff;
+    }
 
 /*Step 7*/
-#step7 {
-    padding-bottom:118px;
+.step-quantity-designs {
+    padding-bottom: 118px;
 }
-#step7 .text-card {   
-    padding-top: 122px;     
-    padding-bottom: 66px;    
-}
+    .step-quantity-designs .text-card {
+        padding-top: 122px;
+        padding-bottom: 66px;
+    }
 
-#step7 .radio-buttons-wrapper {
+.step-quantity-designs .radio-buttons-wrapper {
     padding-bottom: 58px;
+    flex-wrap: wrap;
 }
 /*Step 8*/
-#step8 {    
-   padding-bottom:84px;
+.step-upload-or-email-your-design1 {
+    padding-bottom: 84px;
 }
-#step8 .card.form-card {
-    padding-top: 0px;
-}
-#step8 .text-card {    
-    padding: 121px 0px 66px;    
-}
+    .step-upload-or-email-your-design1.card.form-card {
+        padding-top: 0px;
+    }
+    .step-upload-or-email-your-design1 .text-card {
+        padding: 121px 0px 66px;
+    }
 
-#step8 .input-group {
-    height: 83px;
-    background: #fafafa;
-    width: 100%;
-}
+    .step-upload-or-email-your-design1 .input-group {
+        height: 83px;
+        background: #fafafa;
+        width: 100%;
+    }
 
-#step8 .card-body-list {    
-    background:#fdfdfd;
-    padding-top: 20px;
-}
-#step8 .list-group {
-    padding-top: 8px;
-    padding-bottom: 24px;
-}
-#step8 .list-group li{
-    padding: 0 37px;
-}
+    .step-upload-or-email-your-design1.card-body-list {
+        background: #fdfdfd;
+        padding-top: 20px;
+    }
+    .step-upload-or-email-your-design1 .list-group {
+        padding-top: 8px;
+        padding-bottom: 24px;
+    }
+        .step-upload-or-email-your-design1.list-group li {
+            padding: 0 37px;
+        }
+
+    .step-upload-or-email-your-design1 .card.form-card {
+        padding-top:0px;
+        background: #FAFAFA;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    }
+    .step-upload-or-email-your-design1 .list-group li {
+        padding: 0 37px;
+    }
 
 .upload-btn-wrapper {
     position: relative;
@@ -2757,6 +2860,44 @@ ul.flags a.selected img, ul.flags a:hover img {
     top: 0;
     opacity: 0;
 }
+.upload-design-email-container {
+    flex-direction:column;
+}
+    .upload-design-email-container > div {
+        margin: auto;
+    }
+    .upload-design-email-container > div > div:nth-child(2) {
+        padding:0 46px;
+    }
+
+    .upload-design-email-container .card.form-card {
+        margin: 0 21px 0px;
+    }
+    .upload-design-email-container .card {
+        width: 334px;
+        flex: unset;
+        margin: 0 21px 0px;
+    }
+.card-email-design {
+    background: #FAFAFA;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+    .card-email-design .card-text {
+        background: #fff;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 42px 16px;
+        text-align: center;
+        flex-grow: 1;
+        display:flex;
+    }
+.step-upload-or-email-your-design1 .card-email-design .input-group {
+    padding: 0px;
+}
+.card-email-design-button{
+    display:none;
+}
 /* Style the close button (span) */
 .step .close {
     cursor: pointer;
@@ -2772,50 +2913,51 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /*Step8b*/
 
-#step8b {    
-   padding-bottom:41px;
+.step-upload-or-email-your-design2 {
+    padding-bottom: 41px;
 }
-#step8b .card.form-card {
+.step-upload-or-email-your-design2 .card.form-card {
     padding-top: 0px;
 }
-#step8b .text-card {    
-    padding: 55px 0px 66px;    
+.step-upload-or-email-your-design2 .text-card {
+    padding: 55px 0px 66px;
 }
 
-#step8b .input-group {
+.step-upload-or-email-your-design2 .input-group {
     height: 83px;
     background: #fafafa;
     width: 100%;
 }
 
-#step8b .card-body-list {    
-    background:#fdfdfd;
+.step-upload-or-email-your-design2 .card-body-list {
+    background: #fdfdfd;
     padding-top: 20px;
 }
-#step8b .list-group {
+.step-upload-or-email-your-design2 .list-group {
     padding-top: 8px;
     padding-bottom: 24px;
 }
-#step8b .list-group li{
-    padding: 0 37px;
-    margin-bottom: 1px;
-}
-
-/*Step9*/
-#step9 {
-   padding-bottom:72px;
-}
- #step9 .text-card {
-    padding: 75px 0px 66px;
-}
-
-    #step9 .card-body-list {
-        width: 584px;
-        border-radius: 10px;
-        overflow: hidden;
+    .step-upload-or-email-your-design2 .list-group li {
+        padding: 0 37px;
+        margin-bottom: 1px;
     }
 
-    #step9 .list-group-item {
+
+/*Step9*/
+#step10b {
+    padding-bottom: 72px;
+}
+    #step10b .text-card {
+        padding: 75px 0px 66px;
+    }
+
+#step10b .card-body-list {
+    width: 584px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    #step10b .list-group-item {
         height: 39px;
         border-radius: 50px;
         background: #FAFAFA;
@@ -2825,43 +2967,43 @@ ul.flags a.selected img, ul.flags a:hover img {
         padding: 0 20px;
     }
 
-        #step9 .list-group-item input[type=text] {
+        #step10b .list-group-item input[type=text] {
             background: #FAFAFA;
             border-radius: 0px;
             margin: 0px;
             padding: 0px;
         }
 
-        #step9 .list-group-item input:first-child {
+        #step10b .list-group-item input:first-child {
             width: 65%;
             color: #b2b2b2;
             font-size: 13px !important;
         }
 
-        #step9 .list-group-item input:last-child {
+        #step10b .list-group-item input:last-child {
             width: 35%;
             text-align: right;
         }
 
-    #step9 .list-group {
+    #step10b .list-group {
         flex-wrap: wrap;
         padding: 14px 32px 26px;
     }
 
 /*Step 10*/
-#step10 {
+.step-configuration {
  padding-bottom:121px;  
 }
 
-#step10 .text-card {    
+.step-configuration .text-card {    
     padding: 122px 0px 50px;    
 }
 
-    #step10 .card-body-list {
+   .step-configuration .card-body-list {
         padding: 20px 35px 32px;
     }
 
-    #step10 .card.form-card {
+  .step-configuration .card.form-card {
         padding-top: 18px;
     }
 
@@ -2891,65 +3033,68 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /******Step 12******/
 
-#step12 {
+.step-checkout {
     padding-bottom:84px;
 }
-#step12 .text-card {    
+.step-checkout .text-card {    
     padding: 122px 0px 40px;    
 }
-    #step12 .card {
+    .step-checkout .card {
         width: 245px;
         flex: unset;
         background: unset;
         padding: 0px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     }
-    #step12 .card .input-group {
+    .step-checkout .card .input-group {
         width: 245px;    
     }
-        #step12 .card .input-group, #step12 .card .input-group input {
+        .step-checkout .card .input-group, .step-checkout .card .input-group input {
             margin: 0px;
             padding: 0px;
         }
 
-            #step12 .card .input-group input[type=text] {
+            .step-checkout .card .input-group input[type=text] {
                 padding: 0 21px;
             }
 
-    #step12 .input-group-append {
+    .step-checkout .input-group-append {
         position: absolute;
         right: 0px;
     }
 
-    #step12 .single-form-card .card {
+    .step-checkout .single-form-card .card {
         box-shadow: unset !important;
     }
 
-    #step12 .single-form-card .button-1 {
+    .step-checkout .single-form-card .button-1 {
         background: #fff !important;
         border: 1px solid #66B22E !important;
         border-radius: 50px;
         color: #66B22E !important;
     }
 
-    #step12 .card .card-body {
+    .step-checkout .card .card-body {
         padding: 19px 0 11px;
         background: #fafafa;
     }
 
-    #step12 .card-body-list {
+    .step-checkout .card-body-list {
         padding-top: 0px;
     }
 
-    #step12 .single-form-card {
+    .step-checkout .single-form-card {
         padding: 0 0 60px;
     }
-    #step12 .card .price {
+    .step-checkout .card .price {
         border:0px; 
         height: auto;
         padding: 10px 0 11px;
     }
-/*Step 13*/
+    .step-checkout .card:last-child {
+        margin-top:21px;
+    }
+/*Step 13 Completed*/
 .card-body p {
     color: rgba(0, 0, 0, 0.2);
     font-size: 12px;
@@ -2959,22 +3104,26 @@ ul.flags a.selected img, ul.flags a:hover img {
     display: flex;
 }
 
-#step13 {
+.step-completed {
    padding-bottom:14px;
 }
-#step13 .text-card {   
+.step-completed .text-card {   
     padding: 108px 0px 48px;    
 }
-#step13 .list-group li{
+.step-completed .list-group li{
   margin-bottom:1px;
 }
-    #step13 .card {
+    .step-completed .card {
         width: 239px;
         flex: unset;
         background: #FAFAFA;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
         /*box-shadow: 0px 0px 15px #e4e2dc;*/
     }
+
+        .step-completed .card:last-child {
+            margin-top: 21px;
+        }
 
 .card .price {
     font-size: 15px;
@@ -2999,12 +3148,12 @@ ul.flags a.selected img, ul.flags a:hover img {
 .card-body-list {
     background: #fff;
     width: 100%;
-    padding-top: 18px;
+    padding-top: 19px;
     margin: auto;
     position: relative;
 }
 
-#step13 .card .card-body {
+.step-completed .card .card-body {
     padding: 19px 0 11px;
 }
 
@@ -3056,9 +3205,6 @@ ul.flags a.selected img, ul.flags a:hover img {
     padding: 122px 0px 50px;    
 }
 
-.thermallabels #step8 .card-body-list {
-    padding: 20px 35px 32px;
-}
 
 .thermallabels #step8 .card.form-card {
     padding-top: 18px;
@@ -3072,6 +3218,9 @@ ul.flags a.selected img, ul.flags a:hover img {
 .thermallabels #step8 .card-body-list .row .col-sm:last-child {
     width: 10px;
 }
+
+/*Blank Roll Labels*/
+
 
 /*********** Shopping basket *******************************/
 button.checkout-button {
@@ -3735,7 +3884,7 @@ button.checkout-button {
         justify-content:center;
         flex-direction: column;
     }*/
-    /*#step1 .mw-1250, #step3 .mw-1250 {
+    /*.step-shape .mw-1250, #step3 .mw-1250 {
         padding: 60px;        
     }*/
     .cards {
@@ -3759,7 +3908,7 @@ button.checkout-button {
     .text-card .card-text {
         padding-top: 18px !important;        
     }
-    #step1 {
+    .step-shape {
         padding-bottom: 0px;
     }
     .step {
@@ -3771,6 +3920,7 @@ button.checkout-button {
     }
     .step h3 {
         font-size: 18px !important;
+        position:unset !important;
     }
     .step input[type=text] {
         font-size:14px !important; 
@@ -3779,10 +3929,10 @@ button.checkout-button {
         width: 100% !important;
         padding: 12px 0px 11px !important;        
     }
-    .card-text .tooltip{
-        top: 6px !important;
-        right: 6px !important;
+    .card-text, .step-shape h3.card-text {
+        position: unset;
     }
+    
     .step .button-2 {        
         height: 30px !important;
         padding: 0px !important;        
@@ -3795,16 +3945,32 @@ button.checkout-button {
     .checkbox-wrapper {
         padding-bottom: 0px;
         max-height: 260px;
-        overflow: hidden;
-        margin-bottom: 40px;
+        overflow: hidden;        
+        width: 558px;
+        margin: auto auto 40px;
         justify-content: space-between;
+        justify-content:center;
     }
     .checkbox-wrapper .form-check {
-        margin: 20px 6px 0px;
+        margin: 0px 6px 20px;
         width: 264px;
         height: 63px;
         display: inline-flex;
     }
+
+        .checkbox-wrapper .form-check:last-child {
+            margin-bottom: 0px;         
+        }
+        /*.checkbox-wrapper [type="checkbox"]:checked ~ span.tooltip:before {
+            background: url(../img/ico-mobile-question.png) no-repeat;
+        }*/
+        .checkbox-wrapper [type="checkbox"]:checked ~ label span.tooltip:before {
+            background: url(../img/ico-mobile-question.png) no-repeat
+        }
+        .checkbox-wrapper label {
+            position: relative;
+            overflow: hidden;
+        }
     /*Step Continue button*/
     .button-2.btn-continue {
         height:36px !important;
@@ -3826,7 +3992,64 @@ button.checkout-button {
     }
 
     /*All Steps*/
-    #step9 .card-body-list {
+
+    /*Step Diameter*/
+    .step-diameter .card .form-group {
+        padding-bottom: 37px;
+    }
+    .step-diameter .button-2, .step-size .button-2, .step-size2a .button-2 {
+        height: 35px !important;
+    }
+
+    /*step-size*/
+    .step-size2b .button-2{
+        height:35px;
+    }
+    /*Step Upload Your Design or Email*/
+    .card-email-design {
+        display: none;
+    }
+    .upload-design-email-container .card {
+        margin: 0 auto 20px !important;
+    }
+    .upload-design-email-container .card:last-child {
+        margin: 0px auto !important;
+    }
+    .upload-design-email-container > div > div:nth-child(2) {
+        display: none !important;
+    }
+    
+    .upload-design-email-container > div {
+        flex-direction: column;
+    }
+    .upload-design-email-container .card-text {
+        display: none !important;
+    }
+    .card-email-design-button {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px !important;
+        border: 1px solid #66B22E;
+    }
+    .upload-design-email-container .button-2 {
+        height:35px !important;
+    }
+   
+        .card-email-design-button .button-2 {            
+            color: #66B22E;
+            background:#fff !important;
+            height: 33px !important;
+        }
+        .card-email-design-button .button-2:hover {
+            color:#fff !important;
+        }
+    .card-email-design-button .tooltip {
+        background: url("../img/ico-tooltip-light-bg2.png") no-repeat !important;
+        width: 25px;
+        height: 27px;
+    }
+        /*#step9 .card-body-list {
         width: 498px;
         border-radius: 10px;
         overflow: hidden;
@@ -3834,14 +4057,13 @@ button.checkout-button {
     #step9 .list-group {
         flex-wrap: wrap;
         padding: 14px 28px 26px;
-    }
-
-    /*Step Checkout*/
-    .step-checkout .cards{
-        max-width:558px;
-        margin:auto;
-        padding:0px;
-    }
+    }*/
+        /*Step Checkout*/
+        .step-checkout .cards {
+            max-width: 558px;
+            margin: auto;
+            padding: 0px;
+        }
 
     /*Step Completed*/
     .step-completed .cards .card {
@@ -3854,6 +4076,52 @@ button.checkout-button {
         max-width:540px;
         margin:auto;
     }
+
+    /*Custom Scrollbar*/
+    .mCSB_outside + .mCSB_scrollTools {
+        right: -18px !important;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail {
+        width: 7px !important;
+        background:#f5f5f5 !important;      
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {        
+        background-color: #e1e1e1 !important;    
+        width: 7px !important;    
+    }
+    .mCSB_scrollTools {
+        opacity: 1 !important;
+        filter: "alpha(opacity=100)" !important;
+        -ms-filter: "alpha(opacity=100)" !important;
+    }
+
+    /*Tooltip*/
+    .card-text .tooltip {
+        top: 0px !important;
+        right: 0px !important;
+    }
+    .tooltip {
+        background: url("../img/ico-lg-tooltipbg.png") no-repeat !important;
+        width: 30px;
+        height: 31px;
+        top: 0px !important;
+        right: 0px !important;
+        position: absolute;
+    }
+
+        .tooltip.tooltip-light-bg {
+            background: url("../img/ico-tooltip-light-bg.png") no-repeat !important;
+        }
+        .tooltip:before {
+            background: url(../img/ico-mobile-question.png) no-repeat;
+            width: 5px;
+            height: 9px;
+            content: "";
+            display: flex;
+            position: absolute;
+            top: 8px;
+            right: 9px;
+        }
 }
 
 @media all and (max-width: 850px) {
@@ -4529,7 +4797,8 @@ button.checkout-button {
         padding-bottom: 0px; 
         max-height: 256px;  
         overflow: hidden;
-        margin-bottom: 40px;     
+        margin-bottom: 40px;   
+        width:100%;  
     }
     .checkbox-wrapper .form-check{
         margin: 20px 0px 0px;
@@ -4586,7 +4855,7 @@ button.checkout-button {
 
     /***** All Steps *****/
     /*Step 1*/
-    #step1 .text-card {
+    .step-shape .text-card {
         padding: 136px 0px 66px;
     }
 
@@ -4698,25 +4967,7 @@ button.checkout-button {
     }
     .list-group li a {    
         text-align: left;
-    }
-
-    /*Custom Scrollbar*/
-    .mCSB_outside + .mCSB_scrollTools {
-        right: -18px !important;
-    }
-    .mCSB_scrollTools .mCSB_draggerRail {
-        width: 7px !important;
-        background:#f5f5f5 !important;      
-    }
-    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {        
-        background-color: #e1e1e1 !important;    
-        width: 7px !important;    
-    }
-    .mCSB_scrollTools {
-    opacity: 1 !important;
-    filter: "alpha(opacity=100)" !important;
-    -ms-filter: "alpha(opacity=100)" !important;
-}
+    }    
    
     .customer-support{
         width: Calc(100% - 40px);
@@ -5068,7 +5319,21 @@ button.checkout-button {
     .footer-lower{
         line-height:18px;
     }
+
+    .radio-buttons-wrapper .radio-btn:nth-last-child(-n+2) {
+        margin-top:42px;
+    }
 }
+
+@media all and (min-width: 1092px) {
+    .radio-buttons-wrapper .radio-btn:nth-last-child(-n+2) {
+        margin-top: 0px;
+    }
+    .radio-buttons-wrapper .radio-btn:last-child {
+        margin-top: 42px;
+    }
+}
+
 
 @media all and (min-width: 1120px) {
 
@@ -5102,15 +5367,52 @@ button.checkout-button {
 }
 
 @media all and (min-width: 1150px) {
+    /**** Home Page****/
     .customersay-picture {
         width: unset;
     }
 }
+
 @media all and (min-width: 1200px) {
     /* Template */
 
 }
 
+@media all and (min-width: 1216px) {
+
+    /******* Product Details Page ******/
+    .radio-buttons-wrapper .radio-btn:last-child {
+        margin-top: 0px;
+    }
+}
+
+@media all and (min-width: 1216px) {
+
+    /******* Product Details Page ******/
+    .radio-buttons-wrapper .radio-btn:last-child {
+        margin-top: 0px;
+    }
+}
+
+@media all and (min-width: 1224px) {
+
+    /******* Product Details Page ******/
+    .step-completed .card:last-child {
+        margin-top: 0px;
+    }
+}
+
+@media all and (min-width: 1228px) {
+    /******* Product Details Page ******/
+    #step1 .product-card:last-child {
+        margin-top: 0px;
+    }
+
+    .step-checkout .card:last-child {
+        margin-top: 0px;
+    }
+    
+}
 /*********** 1200 *******************************/
 @media all and (min-width: 1281px) {
 
