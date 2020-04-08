@@ -540,7 +540,7 @@
 
                             </div>
 
-                            <div id="step4" class="step material-type" data-title="Change Material Type">
+                            <div id="step4" class="step step-material" data-title="Change Material Type">
                                 <div onclick="GoToSection('step3',false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
@@ -629,7 +629,7 @@
 
                             </div>
 
-                            <div id="step5" class="step step-metalic" data-title="Change Material">
+                            <div id="step5" class="step step-printed-element" data-title="Change Material">
                                 <div onclick="GoToSection('step4', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                     </div>
@@ -644,26 +644,36 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="checkbox-wrapper">
-                                        <div class="form-check">
-                                            <input id="step5value1" class="custom-checkbox" name="step5value1" type="checkbox" value="1" />
-                                            <label class="l-gray-bgcolor" for="step5value1">Yes<span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
-
+                                    <div class="radio-buttons-wrapper d-flex justify-content-center align-items-center">
+                                        <div class="radio-btn">
+                                            <input id="step5value1" class="radio-btn" name="step5" type="radio" value="1" />
+                                            <label class="l-gray-bgcolor d-flex justify-content-center align-items-center" for="step5value1">Yes <span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
                                         </div>
-                                        <div class="form-check">
-                                            <input id="step5value2" class="custom-checkbox" name="step5value2" type="checkbox" checked value="2" />
-                                            <label class="l-gray-bgcolor" for="step5value2">No<span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
-
-                                        </div>
-
+                                        <div class="radio-btn">
+                                            <input id="step5value2" class="radio-btn" name="step5" checked type="radio" value="2" />
+                                            <label class="l-gray-bgcolor d-flex justify-content-center align-items-center" for="step5value2">No <span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
+                                        </div>                                        
                                     </div>
+                                    <!--<div class="checkbox-wrapper">
+        <div class="form-check">
+            <input id="step5value1" class="custom-checkbox" name="step5value1" type="checkbox" value="1" />
+            <label class="l-gray-bgcolor" for="step5value1">Yes<span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
 
-                                    <input onclick="GoToSection('step6', true)" type="button" class="button-2 btn-continue br10" value="Continue" />
+        </div>
+        <div class="form-check">
+            <input id="step5value2" class="custom-checkbox" name="step5value2" type="checkbox" checked value="2" />
+            <label class="l-gray-bgcolor" for="step5value2">No<span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
+
+        </div>
+
+    </div>-->
+
+                                    <input onclick="GoToSection('step5b', false)" type="button" class="button-2 btn-continue br10" value="Continue" />
                                 </div>
 
                             </div>
 
-                            <div id="step5" class="step step-adhesive" data-title="Change Material">
+                            <div id="step5b" class="step step-adhesive" data-title="Change Material">
                                 <div onclick="GoToSection('step4', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
@@ -692,17 +702,17 @@
                                         </div>
                                         <div class="form-check">
                                             <input id="step5value3" class="custom-checkbox" name="step5value3" type="checkbox" value="3" />
-                                            <label class="l-gray-bgcolor" for="step5value3">Peelable<span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
+                                            <label class="l-gray-bgcolor" for="step5value3">Peelable<span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
 
                                         </div>
                                         <div class="form-check">
                                             <input id="step5value4" class="custom-checkbox" name="step5value4" type="checkbox" value="4" />
-                                            <label class="l-gray-bgcolor" for="step5value4">Ultra Permanent<span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
+                                            <label class="l-gray-bgcolor" for="step5value4">Ultra Permanent<span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
 
                                         </div>
                                         <div class="form-check">
                                             <input id="step5value5" class="custom-checkbox" name="step5value5" type="checkbox" checked value="4" />
-                                            <label class="l-gray-bgcolor" for="step5value5">Permanent<span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
+                                            <label class="l-gray-bgcolor" for="step5value5">Permanent<span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span></label>
 
                                         </div>
                                     </div>
@@ -719,7 +729,7 @@
                                     </div>
                                 </div>
                                 <div class="text-card">
-                                    <div class="card-body">
+                                    <div class="card-body">                                        
                                         <h1 class="card-title">
                                             What finish would you like?
                                         </h1>
@@ -733,6 +743,7 @@
                                         <div class="card product-card">
                                             <img class="card-img-top" src="Themes/Native/Content/img/step1product.png" />
                                             <div class="card-body d-flex justify-content-center align-items-center">
+                                                <div class="additional-space"></div>
                                                 <h3 class="card-text">
                                                     Glossy
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
@@ -743,6 +754,7 @@
                                         <div class="card product-card">
                                             <img class="card-img-top" src="Themes/Native/Content/img/step1product.png" />
                                             <div class="card-body d-flex justify-content-center align-items-center">
+                                                <div class="additional-space"></div>
                                                 <h3 class="card-text">
                                                     Matt
                                                     <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
@@ -809,7 +821,7 @@
                                             <label class="d-flex justify-content-center align-items-center" for="value9">9</label>
                                         </div>
                                     </div>
-                                    <input onclick="GoToSection('step9', true)" type="button" class="button-2 btn-continue" value="Continue" />
+                                    <input onclick="GoToSection('step9', false)" type="button" class="button-2 btn-continue" value="Continue" />
                                 </div>
 
                             </div>
@@ -834,7 +846,7 @@
                                         <div class="d-flex justify-content-center ">
                                             <!-- Upload file -->
                                             <div class="card form-card">
-                                                <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
+                                                <span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
 
                                                 <div class="input-group d-flex justify-content-center">
                                                     <div class="upload-btn-wrapper">
@@ -849,14 +861,14 @@
 
                                                         </li>
                                                     </ul>
-                                                    <input onclick="GoToSection('step9b', true)" type="button" id="#" value="Continue" class="button-2">
+                                                    <input onclick="GoToSection('step9b', false)" type="button" id="#" value="Continue" class="button-2">
                                                 </div>
                                             </div>
                                             <!-- Or -->
                                             <div class="d-flex justify-content-center align-items-center"><h1>or</h1></div>
                                             <!-- Email Design -->
                                             <div class="card card-email-design">
-                                                <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
+                                                <span class="tooltip " data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
 
                                                 <div class="input-group d-flex align-items-center justify-content-center">
                                                     <h5>Email Design</h5>
@@ -864,7 +876,7 @@
                                                 <p class="card-text">
                                                     Send us an email after ordering with your design at designs@rolllabels.co.uk
                                                 </p>
-                                                <input onclick="GoToSection('step9b', true)" type="button" id="#" value="Continue" class="button-2">
+                                                <input onclick="GoToSection('step9b', false)" type="button" id="#" value="Continue" class="button-2">
                                             </div>
 
                                             <div class="card card-email-design-button">
@@ -878,7 +890,7 @@
                             </div>
 
                             <div id="step9b" class="step step-upload-or-email-your-design2" data-title="Change Number of Designs">
-                                <div onclick="GoToSection('step9', true)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step9', false)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -897,7 +909,7 @@
                                         <div class="d-flex justify-content-center ">
                                             <!-- Upload file -->
                                             <div class="card form-card">
-                                                <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
+                                                <span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
 
                                                 <div class="input-group d-flex justify-content-center">
                                                     <div class="upload-btn-wrapper">
@@ -933,6 +945,8 @@
                                             <div class="d-flex justify-content-center align-items-center"><h1>or</h1></div>
                                             <!-- Email Design -->
                                             <div class="card card-email-design">
+                                                <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
+
                                                 <div class="input-group d-flex align-items-center justify-content-center">
                                                     <h5>Email Designs</h5>
                                                 </div>
@@ -1035,7 +1049,7 @@
 
 
                             <div id="step10b" class="step step-quantity" data-title="Change Designs">
-                                <div onclick="GoToSection(10, 90, null, false)" class="step-back-btn d-flex align-items-center justify-content-center">
+                                <div onclick="GoToSection('step10', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
                                     </div>
@@ -1050,7 +1064,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body-list box-shadow">
-                                        <span class="tooltip" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
+                                        <span class="tooltip tooltip-light-bg" data-tippy-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></span>
                                         <h3 class="m-title">Quantity</h3>
                                         <ul class="list-group d-flex">
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -1111,7 +1125,7 @@
                                 </div>
                             </div>-->
 
-                            <div id="step11" class="step step-configuration" data-title="Change Number of Designs">
+                            <div id="step11" class="step step-configuration configuration2" data-title="Change Number of Designs">
                                 <div onclick="GoToSection('step10b', true)" class="step-back-btn d-flex align-items-center justify-content-center">
                                     <div>
                                         Change Shape
@@ -1708,7 +1722,7 @@
         var InitializeCustomScrollbar = function () {
             $(".checkbox-wrapper, .radio-buttons-wrapper").mCustomScrollbar("destroy");
             if (window.innerWidth < 1001) {
-                $(".checkbox-wrapper").mCustomScrollbar({
+                $(".step-material .checkbox-wrapper").mCustomScrollbar({
                     scrollbarPosition: "outside",
                     setLeft: 8
                 });
@@ -1731,37 +1745,13 @@
             InitializeCustomScrollbar();
         });
 
+        
 
-
-
-        //tippy('.tooltip', {
-        //    content: "I'm a Tippy tooltip!"
-        //});
-
-        //tippy('[data-tippy-content]');
 
         /**** Tooltip ****/
-
-       // const template = document.getElementById('template');
-
-        //tippy(".size-tooltip", {
-        //    //content: document.getElementById("#my-template-id"),
-        //    //allowHTML: true
-        //    content: '<div class="size-tooltip-container" style="display:block; font-size:16px;color:#000">The leading edge of the roll will be the first dimension entered in the form. This is displayed as below:<div><div class="content-left"></div><div></div></div></div>',
-        //    allowHTML: true,
-        //});
-        var ss = document.getElementById("template");
-        ss.prepend = '';
-        //tippy(".size-tooltip", {
-        //    content: ss.innerHTML,
-        //    allowHTML: true,
-        //    onShow(instance) {
-        //       console.log(instance);
-        //    },
-        //});
-
-       
-
+      
+        var sizeToolTipTemplate = document.getElementById("template");        
+      
         tippy(".size-tooltip", {           
             allowHTML: true,            
             render(instance) {
@@ -1775,7 +1765,7 @@
                 
                 box.className = 'custom-tooltip size-custom-tooltip';
                 box.textContent = instance.props.content;
-                box.innerHTML = ss.innerHTML;               
+                box.innerHTML = sizeToolTipTemplate.innerHTML;               
                 
                 function onUpdate(prevProps, nextProps) {                    
                     // DOM diffing
