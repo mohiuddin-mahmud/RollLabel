@@ -2239,7 +2239,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     right: 0;
     margin: auto;
     background: #fff;
-    margin-top: 56px;
+    position:absolute;
 }
 .btn-link {
     color: #66B22E;
@@ -2627,7 +2627,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     right: -20px;
 }
 .step-shape {
-    padding-bottom: 26px;
+    padding-bottom: 117px;
 }
 #step1 .product-card:last-child {
     margin-top:21px;
@@ -2637,7 +2637,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 .step-diameter {
     max-width: 690px;
     margin: auto;
-    padding-bottom:96px;
+    padding-bottom:187px;
 }
 .step-diameter .text-card {
     padding-bottom: 66px;
@@ -2664,7 +2664,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /**** Step 2a ****/
 .step-size2a {
-    padding-bottom: 48px;
+    padding-bottom: 139px;
 }
 .step-size2a .text-card {        
     padding: 66px 0px 58px;        
@@ -2706,7 +2706,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /**** Step 2b ****/
 .step-size2b {
-    padding-bottom: 48px;
+    padding-bottom: 139px;
 }
 .step-size2b .text-card {
     padding-bottom: 66px;
@@ -2738,7 +2738,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 .step-material-type {
     /*max-width: 690px;*/
     margin: auto;
-    padding-bottom: 26px;
+    padding-bottom: 117px;
 }
 .step-material-type .text-card {
     padding-bottom: 88px;
@@ -2753,7 +2753,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /**** Step 4 ****/
 .step-material {
-    padding-bottom: 2px;
+    padding-bottom: 93px;
 }
 .step-material .text-card {
     padding-top: 25px;
@@ -2766,7 +2766,7 @@ ul.flags a.selected img, ul.flags a:hover img {
     padding-bottom: 66px;
 }
 .step-printed-element {
-    padding-bottom: 119px;
+    padding-bottom: 210px;
 }
 .step-printed-element .radio-buttons-wrapper .radio-btn {
     width: 238px;
@@ -2776,7 +2776,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /**** Step 5b ****/
 .step-adhesive {
-    padding-bottom: 65px;
+    padding-bottom: 156px;
 }
 .step-adhesive .text-card {
     padding-top: 68px;
@@ -2789,7 +2789,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 /**** Step 6 ****/
 .step-finish {   
     margin: auto;
-    padding-bottom:76px;
+    padding-bottom:167px;
 }
 .step-finish .text-card {
     padding-bottom: 66px;
@@ -2813,7 +2813,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 }
 /**** Step 7 ****/
 .step-quantity-designs {
-    padding-bottom: 118px;
+    padding-bottom: 209px;
 }
 .step-quantity-designs .text-card {
     padding-top: 122px;
@@ -2826,7 +2826,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /**** Step 8 ****/
 .step-upload-or-email-your-design1 {
-    padding-bottom: 67px;
+    padding-bottom: 158px;
 }
 .step-upload-or-email-your-design1.card.form-card {
     padding-top: 0px;
@@ -2932,7 +2932,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 /**** Step8b ****/
 
 .step-upload-or-email-your-design2 {
-    padding-bottom: 41px;
+    padding-bottom: 132px;
 }
 .step-upload-or-email-your-design2 .card.form-card {
     padding-top: 0px;
@@ -2963,7 +2963,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /**** Step9 ****/
 .step-quantity {
-    padding-bottom: 72px;
+    padding-bottom: 163px;
 }
 .step-quantity .text-card {
     padding: 75px 0px 66px;
@@ -3005,7 +3005,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 
 /**** Step 10 -- Configuration ****/
 .step-configuration {
- padding-bottom:121px;  
+ padding-bottom:212px;  
 }
 .step-configuration .text-card {    
     padding: 122px 0px 45px;    
@@ -3037,13 +3037,13 @@ ul.flags a.selected img, ul.flags a:hover img {
     width: 27px;
 }
 
-/**** Step 11 Configuration-2  ****/
+/**** Step11 Configuration-2  ****/
 
 
-/****** Step 12 Checkout ******/
+/****** Step12 Checkout ******/
 
 .step-checkout {
-    padding-bottom:84px;
+    padding-bottom:175px;
 }
 .step-checkout .text-card {    
     padding: 107px 0px 40px;    
@@ -3097,15 +3097,15 @@ ul.flags a.selected img, ul.flags a:hover img {
     margin-top:21px;
 }
 /**** Step 13 Completed ****/
+.step-completed {
+    padding-bottom: 105px;
+}
 .card-body p {
     color: rgba(0, 0, 0, 0.2);
     font-size: 12px;
 }
 .list-group-item {
     display: flex;
-}
-.step-completed {
-   padding-bottom:14px;
 }
 .step-completed .text-card {   
     padding: 108px 0px 58px;    
@@ -3907,12 +3907,11 @@ button.checkout-button {
     }
     h3.card-text {
         width: 100% !important;
-        padding: 12px 0px 11px !important;        
+        padding: 13px 0px 12px !important;        
     }
     .card-text, .step-shape h3.card-text {
         position: unset;
-    }
-    
+    }    
     .step .button-2 {        
         height: 35px !important;
         padding: 0px !important;        
@@ -3921,7 +3920,7 @@ button.checkout-button {
         font-size: 16px !important;
     }
 
-    /* Checkbox Button*/
+    /**** Checkbox Button ****/
     .checkbox-wrapper {
         padding-bottom: 0px;
         max-height: 260px;
@@ -3951,12 +3950,12 @@ button.checkout-button {
         overflow: hidden;
     }
 
-    /* Continue button*/
+    /**** Continue button ****/
     .button-2.btn-continue {
         height:36px !important;
     }
 
-    /*Step Radio Button*/
+    /**** Step Radio Button ****/
     .radio-buttons-wrapper  {
         flex-wrap:wrap;
         max-width: 590px;
@@ -3977,13 +3976,16 @@ button.checkout-button {
     /**** All Steps ****/
 
     /**** Step1 -- Step Shape ****/
+    .step-shape{
+        padding-bottom:186px !important;
+    }
     .product-card .button-2 {
         height: 30px !important;
     }   
 
     /**** Step2 -- Step Diameter ****/
     .step-diameter  {
-        padding-bottom: 192px !important;
+        padding-bottom: 283px !important;
     }
     .step-diameter .text-card {
         padding-bottom: 176px !important;
@@ -3995,13 +3997,13 @@ button.checkout-button {
    
     /**** Step2 -- Step Size ****/
     .step-size2a {
-        padding-bottom: 146px !important;
+        padding-bottom: 237px !important;
     }
     .step-size2a .text-card {
         padding-bottom: 66px !important;
     }
     .step-size2b {
-        padding-bottom: 146px !important;
+        padding-bottom: 237px !important;
     }
     .step-size2b .text-card {
         padding-top: 179px !important;
@@ -4010,7 +4012,7 @@ button.checkout-button {
 
     /**** Step3 -- Step Material Type ****/
     .step-material-type {
-        padding-bottom: 213px !important;
+        padding-bottom: 304px !important;
     }
     .step-material-type .text-card {
         padding-top: 165px !important;
@@ -4018,7 +4020,7 @@ button.checkout-button {
 
     /**** Step4 -- Step Material ****/
     .step-material {        
-        padding-bottom: 132px !important;
+        padding-bottom: 223px !important;
     }
 
     .step-material .text-card {
@@ -4026,9 +4028,9 @@ button.checkout-button {
         padding-bottom: 56px;
     }
 
-    /**** Step 5 ****/
+    /**** Step 5 -- Step Printed Element****/
     .step-printed-element {
-        padding-bottom: 239px !important;
+        padding-bottom: 330px !important;
     }
     .step-printed-element .radio-buttons-wrapper {
         flex-wrap: wrap;
@@ -4049,7 +4051,7 @@ button.checkout-button {
 
     /**** Step5b -- Step Adhesive ****/
     .step-adhesive {
-        padding-bottom:132px !important;
+        padding-bottom:223px !important;
     }
     .step-adhesive .text-card {
         padding: 182px 0px 56px !important;
@@ -4057,9 +4059,10 @@ button.checkout-button {
     .step-adhesive .checkbox-wrapper {
         padding-bottom: 88px;
     }
-    /**** Step6 -- step-finish ****/
+
+    /**** Step6 -- Step Finish ****/
     .step-finish {
-        padding-bottom: 213px !important;
+        padding-bottom: 304px !important;
     }
     .step-finish .text-card {
         padding: 268px 0px 58px !important;
@@ -4074,7 +4077,7 @@ button.checkout-button {
 
     /**** Step 8 -- Step Quantity Designs ****/
     .step-quantity-designs {
-        padding-bottom: 154px !important;
+        padding-bottom: 245px !important;
     }
     .step-quantity-designs .text-card {
         padding: 257px 0px 60px !important
@@ -4127,25 +4130,25 @@ button.checkout-button {
         width: 25px;
         height: 27px;
     }
+
+    .step-upload-or-email-your-design1 {
+        padding-bottom: 255px !important;
+    }
     .step step-upload-or-email-your-design1 .card-text {        
         padding: 257px 0px 66px !important;
-    }
-    .step-upload-or-email-your-design1 {
-        padding-bottom: 164px !important;
-    }
-
+    }    
     .step-upload-or-email-your-design2 .text-card {
         padding-bottom: 64px !important;
     }
     .step-upload-or-email-your-design2 {
-        padding-bottom: 115px !important;
+        padding-bottom: 206px !important;
     }
     /**** Step10 -- Your Configuration ****/
     .step-configuration .text-card {
         padding: 247px 0px 44px !important;
     }
     .step-configuration {
-        padding-bottom: 194px !important;
+        padding-bottom: 285px !important;
     }
        
     /**** Step10b -- Step Quantity  ****/
@@ -4153,7 +4156,7 @@ button.checkout-button {
         padding: 222px 0px 66px !important;
     }
     .step-quantity {
-        padding-bottom: 197px !important;       
+        padding-bottom: 288px !important;       
     }
     /*Step Checkout*/
     .step-checkout .text-card {
@@ -4172,7 +4175,7 @@ button.checkout-button {
         margin: 0 15px 30px !important;
     }
     .step-checkout {
-        padding-bottom: 110px !important;        
+        padding-bottom: 201px !important;        
     }
     /* Your Configuration*/
     
@@ -4192,7 +4195,7 @@ button.checkout-button {
         padding: 213px 0px 60px !important;
     }
     .step-completed {
-        padding-bottom: 141px !important;
+        padding-bottom: 232px !important;
     }
 
     /*Custom Scrollbar*/
@@ -4226,20 +4229,19 @@ button.checkout-button {
         right: 0px !important;
         position: absolute;
     }
-
-        .tooltip.tooltip-light-bg, .size-tooltip {
-            background: url("../img/ico-tooltip-light-bg.png") no-repeat !important;
-        }
-        .tooltip:before, .size-tooltip:before {
-            background: url(../img/ico-mobile-question.png) no-repeat;
-            width: 5px;
-            height: 9px;
-            content: "";
-            display: flex;
-            position: absolute;
-            top: 8px;
-            right: 9px;
-        }
+    .tooltip.tooltip-light-bg, .size-tooltip {
+        background: url("../img/ico-tooltip-light-bg.png") no-repeat !important;
+    }
+    .tooltip:before, .size-tooltip:before {
+        background: url(../img/ico-mobile-question.png) no-repeat;
+        width: 5px;
+        height: 9px;
+        content: "";
+        display: flex;
+        position: absolute;
+        top: 8px;
+        right: 9px;
+    }
 }
 
 @media all and (max-width: 850px) {
@@ -4767,29 +4769,32 @@ button.checkout-button {
 }
 
 @media all and (max-width: 575px) {
-     /*Product Details Page - Printed Labels*/
-    
-        
+    /*Product Details Page - Printed Labels*/
+
+
     /*Header*/
     .responsive-nav-wrapper > div > a.phone {
         display: none;
     }
-    /*Home Page*/ 
+    /*Home Page*/
     /*Product Box*/
-    .item-box {  
+    .item-box {
         width: 100%;
         flex-grow: unset;
         margin: 0px 0px 30px !important;
     }
+
     .description {
         padding: 8px 30px 22px;
     }
+
     .item-grid {
         justify-content: center;
     }
-    .item-grid .item-box:last-child {
-        margin-bottom: 0px !important;
-    }
+
+        .item-grid .item-box:last-child {
+            margin-bottom: 0px !important;
+        }
     /*Customer Say*/
     .customer-review {
         padding: 47px 0 0 0;
@@ -4797,6 +4802,7 @@ button.checkout-button {
         display: flex;
         flex-direction: column;
     }
+
     .section-customersay.container.box-row {
         flex-direction: column;
     }
@@ -4956,19 +4962,16 @@ button.checkout-button {
         max-height: 256px;
         overflow: hidden;
         margin-bottom: 40px;
-        width: 100%;
+        width: 272px;
     }
-
-        .checkbox-wrapper .form-check {
-            margin: 20px 0px 0px;
-            width: 264px;
-            height: 49px;
-        }
-
-            .checkbox-wrapper .form-check:first-child {
-                margin-top: 0px;
-            }
-
+    .checkbox-wrapper .form-check {
+        margin: 20px 0px 0px;
+        width: 264px;
+        height: 49px;
+    }
+    .checkbox-wrapper .form-check:first-child {
+        margin-top: 0px;
+    }
 
     /*Step Radio button*/
     .radio-buttons-wrapper {
@@ -4978,38 +4981,37 @@ button.checkout-button {
         overflow: hidden;
         margin-bottom: 40px !important;
     }
+    .radio-buttons-wrapper .radio-btn {
+        width: 264px !important;
+        height: 49px !important;
+        margin: 20px 0px 0px !important;
+    }
+    .radio-buttons-wrapper .radio-btn:first-child {
+        margin-top: 0px !important;
+    }
 
-        .radio-buttons-wrapper .radio-btn {
-            width: 264px !important;
-            height: 49px !important;
-            margin: 20px 0px 0px !important;
-        }
-
-            .radio-buttons-wrapper .radio-btn:first-child {
-                margin-top: 0px !important;
-            }
-    /*Continue Button*/
+    /**** Continue Button ****/
     .button-2.btn-continue {
         height: 36px !important;
         width: 264px;
         font-size: 16px !important;
     }
 
-    /*Progress Bar*/
+    /**** Progress Bar ****/
     .progress-bar {
         font-size: 0px;
     }
+    .progress-bar .counter {
+        font-size: 12px;
+    }
 
-        .progress-bar .counter {
-            font-size: 12px;
-        }
-
-    /*Tooltip*/
+    /**** Tooltip ****/
     .tooltip {
         top: 0px !important;
         right: 0px !important;
     }
-    /* List Group Item*/
+
+    /**** List Group Item ****/
     .list-group {
         padding: 19px 37px 4px !important;
     }
@@ -5019,34 +5021,135 @@ button.checkout-button {
         margin: 0px 0 20px !important;
     }
 
-    /*form card*/
+    /**** Scrollbar ****/
+    .mCSB_outside + .mCSB_scrollTools {
+        right: -16px !important;
+    }
+
+    /**** form card ****/
     .card.form-card {
         width: 263px !important;
     }
-
     .card-email-design-button {
         width: 263px !important;
     }
+
     /* Common Box shadow */
     .box-shadow {
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.02);
     }
 
     /***** All Steps *****/
-    /*Step 1*/
+    /**** Step1 -- Step Shape ****/
+    .step-shape {
+        padding-bottom: 89px !important;
+    }
     .step-shape .text-card {
-        padding: 136px 0px 66px;
+        padding: 86px 0px 35px !important;
+    }
+    .step-shape .card h3 {
+        padding: 13px 0px 12px !important;
     }
 
-    /*Step Diameter*/
+    /**** Step2 -- Step Diameter ****/
+    .step-diameter {
+        padding-bottom: 158px !important;
+    }
     .step-diameter .card.form-card {
         width: 263px;
     }
-    /*Step Size*/
-    .step-size2a .card.form-card, .step-size2b .card.form-card {
+    .step-diameter .text-card {
+        padding-top: 119px !important;
+        padding-bottom: 36px !important;
+    }
+
+    /**** Step2 Step Size ****/
+    .step-size2a {
+        padding-bottom: 108px !important;
+    }
+    .step-size2a .card.form-card {
         width: 263px;
     }
-    /*upload-your-design*/
+    .step-size2a .text-card {
+        padding-bottom: 36px !important;
+    }
+    .step-size2b {
+        padding-bottom: 108px !important;
+    }
+    .step-size2b .text-card {
+        padding-top: 70px !important;
+        padding-bottom: 36px !important;
+    }
+    .step-size2b .card.form-card {
+        width: 263px;
+    }
+
+    /**** Step3 Step Material Type ****/
+    .step-material-type {
+        padding-bottom: 152px !important;
+    }
+    .step-material-type .text-card {
+        padding: 115px 0 28px!important;
+    }
+
+    /**** Step4 Step Material ****/
+    .step-material {
+        padding-bottom: 88px !important;
+    }
+    .step-material .text-card {
+        padding: 20px 0 39px !important;        
+    }
+
+    /**** Step5 Step Printed Element ****/
+    .step-printed-element {
+        padding-bottom: 157px !important;
+    }
+
+    /**** Step5b Step Adhesive ****/
+    .step-adhesive {
+        padding-bottom: 182px !important;
+    }
+
+    /**** Step6 Step Adhesive ****/
+    .step-finish {
+        padding-bottom: 152px !important;
+    }
+
+    /**** Step8 Step Quantity Designs ****/
+    .step-quantity-designs {
+        padding-bottom: 88px !important;
+    }
+
+    /**** Step9 Step Upload or Email your Design ****/
+    .step-upload-or-email-your-design1 {
+        padding-bottom: 151px !important;
+    }
+
+    .step-upload-or-email-your-design2 {
+        padding-bottom: 116px !important;
+    }
+
+    /**** Step10 Step Your Configuration ****/
+    .step-configuration {
+        padding-bottom: 143px !important;
+    }
+
+    /**** Step10b Step Quantity ****/
+    .step-quantity {
+        padding-bottom: 102px !important;
+    }
+
+    /**** Step12 Step Checkout ****/
+    .step-checkout {
+        padding-bottom: 131px !important;
+    }
+
+    /**** Step13 Step Completed ****/
+    .step-completed {
+        padding-bottom: 142px !important;
+    }
+
+    /**** Step upload-your-design ****/
     .upload-design-email-container .card.form-card {
         padding-top: 0px !important;
         background: #FAFAFA;
