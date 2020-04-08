@@ -2853,7 +2853,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 .step-upload-or-email-your-design1 .card.form-card {
     padding-top:0px;
     background: #FAFAFA;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 .step-upload-or-email-your-design1 .list-group li {
     padding: 0 37px;
@@ -2936,7 +2936,7 @@ ul.flags a.selected img, ul.flags a:hover img {
 }
 .step-upload-or-email-your-design2 .card.form-card {
     padding-top: 0px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 .step-upload-or-email-your-design2 .text-card {
     padding: 53px 0px 66px;
@@ -3157,58 +3157,6 @@ ul.flags a.selected img, ul.flags a:hover img {
     color: #3C3C3B;
     text-align: right;
 }
-
-/*Thermal Labels Product Details Page*/
-
-.thermallabels #step6{
-    padding-bottom:48px;
-}
-
-.thermallabels #step6 input[type=text] {
-    background: #fafafa;
-    font-size: 14px;
-    font-weight: 300;
-    color: #3C3C3B;
-    padding: 0 22px;
-    width: 100%;
-}
-.thermallabels #step6 .button-2 {
-    margin-top: 18px;
-}
-
-.thermallabels #step7 {
-    padding-bottom:65px;
-}
-.thermallabels #step7 .text-card {
-    padding-bottom:66px;
-}
-.thermallabels #step7 .checkbox-wrapper label {
-        background: #FAFAFA;
-}
-
-.thermallabels #step8 {
- padding-bottom:121px;  
-}
-
-.thermallabels #step8 .text-card {    
-    padding: 122px 0px 50px;    
-}
-
-
-.thermallabels #step8 .card.form-card {
-    padding-top: 18px;
-}
-.thermallabels #step8 .card-body-list .row .col-sm:first-child {
-    width: 90px;
-}
-.thermallabels #step8 .card-body-list .row .col-sm:nth-child(2) {
-    width: 56px;
-}
-.thermallabels #step8 .card-body-list .row .col-sm:last-child {
-    width: 10px;
-}
-
-/*Blank Roll Labels*/
 
 
 /*********** Shopping basket *******************************/
